@@ -1,5 +1,17 @@
 # Bob-Python
 
+## 下載程式
+
+```shell
+# pull Bob-python
+git clone https://[github Token]@github.com/VincentYeh-dev/Bob-python.git -b develop
+
+#更新submodule
+git submodule init
+git submodule update --remote
+```
+
+
 
 ## 已測試版本
 
@@ -22,6 +34,7 @@ pip3 install virtualenv
 ```shell
 virtualenv venv
 source venv/bin/activate
+pip install -U pip setuptools==57.5.0
 ```
 
 3. 安裝依賴
