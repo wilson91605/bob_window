@@ -1,0 +1,40 @@
+[
+  {
+    "id": "happy",
+    "data": {
+      "name": "smile",
+      "sentence": "She has a nice smile.",
+      "face": "face_gif_happy",
+      "image": "face_happy",
+      "action": "happy.csv",
+      "tr_name": "微笑",
+      "tr_sentence": "她笑得很開心。"
+    }
+  },
+  {
+    "id": "sad",
+    "data": {
+      "name": "sad",
+      "sentence": "I am sad.",
+      "face": "face_gif_sad",
+      "image": "face_sad",
+      "action": "sad.csv",
+      "code": "zh_TW",
+      "tr_name": "難過",
+      "tr_sentence": "我很難過。"
+    }
+  },
+  {
+    "id": "angry",
+    "data": {
+      "name": "angry",
+      "sentence": "I am angry.",
+      "face": "face_gif_sad",
+      "image": "face_sad",
+      "action": "angry.csv",
+      "code": "zh_TW",
+      "tr_name": "生氣",
+      "tr_sentence": "我很生氣。"
+    }
+  }
+]

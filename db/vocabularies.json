@@ -1,0 +1,135 @@
+[
+  {
+    "id": "vocabulary",
+    "data": {
+      "name": "Vocabularies",
+      "vocabularies": [
+        {
+          "name": "Happy",
+          "translated": "開心的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_happy",
+          "audio": "vocabulary_audio_happy",
+          "action": "happy.csv"
+        },
+        {
+          "name": "Angry",
+          "translated": "生氣的",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_angry",
+          "audio": "vocabulary_audio_angry",
+          "definition": "full of anger, displeasure",
+          "action": "angry.csv"
+        },
+        {
+          "name": "Sad",
+          "translated": "難過的",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_sad",
+          "audio": "vocabulary_audio_sad",
+          "definition": "feeling or showing sorrow; unhappy",
+          "action": "sad.csv"
+        },
+        {
+          "name": "Hungry",
+          "translated": "餓的",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_hungry",
+          "audio": "vocabulary_audio_hungry",
+          "definition": "feeling or showing the need for food"
+        },
+        {
+          "name": "Tired",
+          "translated": "疲累的",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_tired",
+          "audio": "vocabulary_audio_tired",
+          "definition": "in need of rest or sleep",
+          "action": "tired.csv"
+        },
+        {
+          "name": "Sandwich",
+          "translated": "三明治",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_sandwich",
+          "audio": "vocabulary_audio_sandwich",
+          "definition": "two pieces of bread with food such as cheese, salad, or meat between them.",
+          "action": "sandwich.csv"
+        },
+        {
+          "name": "Pizza",
+          "translated": "披薩",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_pizza",
+          "audio": "vocabulary_audio_pizza",
+          "definition": "a large circle of flat bread baked with cheese, tomatoes, and sometimes meat and vegetables spread on top.",
+          "action": "pizza.csv"
+        },
+        {
+          "name": "Donut",
+          "translated": "甜甜圈",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_donut",
+          "audio": "vocabulary_audio_donut",
+          "definition": "a small fried cake of sweetened dough, typically in the shape of a ball or ring.",
+          "action": "donut.csv"
+        },
+        {
+          "name": "Carrot",
+          "translated": "胡蘿蔔",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_carrot",
+          "audio": "vocabulary_audio_carrot",
+          "definition": "a long pointed orange root eaten as a vegetable",
+          "action": "carrot.csv"
+        },
+        {
+          "name": "Cake",
+          "translated": "蛋糕",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_cake",
+          "audio": "vocabulary_audio_cake",
+          "definition": "a sweet food made with a mixture of flour, egg, fat, and sugar",
+          "action": "cake.csv"
+        },
+        {
+          "name": "Hot dog",
+          "translated": "熱狗",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_hotdog",
+          "audio": "vocabulary_audio_hotdog",
+          "definition": "a cooked sausage eaten in a long soft piece of bread, often with ketchup (番茄醬) or mustard（芥末醬）",
+          "action": "hotdog.csv"
+        },
+        {
+          "name": "Apple",
+          "translated": "蘋果",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_apple",
+          "audio": "vocabulary_audio_apple",
+          "definition": "a round fruit with red, green, yellow skin and small seeds.",
+          "action": "apple.csv"
+        },
+        {
+          "name": "Banana",
+          "translated": "香蕉",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_banana",
+          "audio": "vocabulary_audio_banana",
+          "definition": "a long, curved fruit with yellow skin and soft, sweet, white flesh (果肉）inside.",
+          "action": "banana.csv"
+        },
+        {
+          "name": "Broccoli",
+          "translated": "花椰菜",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_broccoli",
+          "audio": "vocabulary_audio_broccoli",
+          "definition": "a vegetable with green stalks(莖)and green top (表面).",
+          "action": "broccoli.csv"
+        }
+      ]
+    }
+  }
+]
