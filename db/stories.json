@@ -1,0 +1,161 @@
+[
+  {
+    "id": "the_story_of_niana",
+    "data": {
+      "name": "THE STORY OF NIAN, A CHINESE NEW YEAR STORY",
+      "total": 13,
+      "pages": [
+        {
+          "text": "THE STORY OF NIAN, A CHINESE NEW YEAR STORY",
+          "audio": "story_audio_the_story_of_niana_title",
+          "image": "face_gif_happy",
+          "action": "storyaction_start.csv"
+        },
+        {
+          "text": "Once upon a time, long long ago, there was a man-eating monster called \"Nian\".",
+          "audio": "story_audio_the_story_of_niana_1",
+          "image": "face_gif_surprise",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "This beast lived deep in the ocean.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_2",
+          "action": "storyaction_3.csv"
+        },
+        {
+          "text": "He would sleep every day of the year, except on the last day of the Lunar Year, when the cold winter months would turn into Spring.",
+          "image": "face_gif_sad",
+          "audio": "story_audio_the_story_of_niana_3",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "Nian would come on land to attack, and eat whatever he could find and whatever lay in I his path.",
+          "image": "face_gif_love_eyes",
+          "audio": "story_audio_the_story_of_niana_4",
+          "action": "storyaction_4.csv"
+        },
+        {
+          "text": "This was the night everyone lived in terror!",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_5",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "Year after year Nian returned, and he was such a powerful beast that no one could take him on or defeat him.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_6",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "Many had tried but all had died.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_7",
+          "action": "storyaction_3.csv"
+        },
+        {
+          "text": "On New Year’s Eve, all the villagers would take their loved ones and family members, old and young, deep into the mountains to hide from the beast.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_8",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "One year on that night, a traveler came to town, looking for food and a place to stay overnight.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_9",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "Everyone was far too busy packing to leave for the mountains, so no one was kind to him.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_10",
+          "action": "storyaction_4.csv"
+        },
+        {
+          "text": "Only one old lady offered him a simple plate of dumplings and a place to sleep.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_11",
+          "action": "storyaction_3.csv"
+        },
+        {
+          "text": "After his meal, the traveler was so touched by the old lady's kindness that he decided to tell a long-hidden secret of how to drive away the New Year beast.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_12",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "That evening when Nian arrived at their village, all the houses were dark, except the one where the old woman lived.",
+          "audio": "story_audio_the_story_of_niana_13",
+          "image": "face_gif_happy",
+          "action": "storyaction_4.csv"
+        },
+        {
+          "text": "As Nian saw the light, he licked his lips with eagerness and came near the house.",
+          "audio": "story_audio_the_story_of_niana_14",
+          "image": "face_gif_surprise",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "Suddenly, Nian was greeted with deafening noises of firecrackers sounding endlessly.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_15",
+          "action": "storyaction_3.csv"
+        },
+        {
+          "text": "The monster was frightened!",
+          "image": "face_gif_sad",
+          "audio": "story_audio_the_story_of_niana_16",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "Next, the beast saw that the house was covered in red paper.",
+          "image": "face_gif_love_eyes",
+          "audio": "story_audio_the_story_of_niana_17",
+          "action": "storyaction_4.csv"
+        },
+        {
+          "text": "That scared Nian even more, and he took off running back into the ocean.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_18",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "When the villagers returned, they saw that the old woman was unhurt!",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_niana_19",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "Everyone was eager to learn what she did to survive Nian.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_20",
+          "action": "storyaction_3.csv"
+        },
+        {
+          "text": "The old woman told the villagers that Nian was afraid of loud noises and the color red.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_21",
+          "action": "storyaction_1.csv"
+        },
+        {
+          "text": "The next year, the villagers stayed up all night, lit firecrackers, lit red lanterns all around their houses, pasted red paper on their doors and walls, wore red clothing, danced to loud music, and banged loud gongs and drums.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_22",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "That year and every year since, Nian has never returned.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_23",
+          "action": "storyaction_4.csv"
+        },
+        {
+          "text": "This eventually became a tradition and the way to celebrate Chinese New Year.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_niana_24",
+          "action": "storyaction_end.csv"
+        }
+      ]
+    }
+  }
+]
