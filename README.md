@@ -5,7 +5,7 @@
 ```shell
 # pull Bob-python
 git clone https://[github Token]@github.com/VincentYeh-dev/Bob-python.git -b develop
-
+cd Bob-python
 #更新submodule
 git submodule init
 git submodule update --remote
@@ -27,12 +27,12 @@ git submodule update --remote
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install python3.8 python3.8-dev
-pip3 install virtualenv
+python3.8 -m pip install virtualenv
 ```
 2. 建置並進入虛擬環境
 
 ```shell
-virtualenv venv
+python3.8 -m virtualenv venv
 source venv/bin/activate
 pip install -U pip setuptools==57.5.0
 ```
@@ -50,8 +50,8 @@ pip install -U pip setuptools==57.5.0
 ```shell
 pip install -r requirements_xx_x.x.xx.txt
 ```
-
-
+4. Setting pycharm python interpreter
+![](README_RES/python-interpreter.png)
 
 ## 三種平板連線方式
 
