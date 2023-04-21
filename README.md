@@ -50,8 +50,8 @@ pip install -U pip setuptools==57.5.0
 ```shell
 pip install -r requirements_xx_x.x.xx.txt
 ```
-4. Setting pycharm python interpreter
-![](README_RES/python-interpreter.png)
+
+
 
 ## 三種平板連線方式
 
@@ -132,6 +132,9 @@ sudo systemctl restart bluetooth.service
 ### 在Jetson AGX 安裝 tensorflow
 
 [在Jetson 安裝tensorflow](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
+https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
+https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 ```shell=
 $ sudo apt-get update
