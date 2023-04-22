@@ -5,22 +5,22 @@
 1. 開啟Github網站
 2. Fork實驗室Bob-Python專案
 
-![fork](README_RES\fork.png)
+![fork](README_RES/fork.png)
 
 3. Fork之後帳號會出現一份自己的repo，右邊即為到時候git clone的時候需要用到的網址。
 
-![git_url](README_RES\git_url.png)
+![git_url](README_RES/git_url.png)
 
 4. 點選右邊下拉欄位的 [Settings -> Developer settings](https://github.com/settings/apps)
 
 5. 選擇Personal access tokens (classic)
 6. Generate New token，照下圖選擇過期日和權限
 
-![git_token](README_RES\git_token.png)
+![git_token](README_RES/git_token.png)
 
 7. token即為你存取github repo的密碼，只會顯示一次，妥善保管token。
 
-![token](README_RES\token.png)
+![token](README_RES/token.png)
 
 8. 把repo複製下來到本機，並更新子模組
 
@@ -75,7 +75,7 @@ pip install -r requirements_xx_x.x.xx.txt
 
 4. 設定pycharm python interpreter
 
-![](README_RES\python-interpreter.png)
+![](README_RES/python-interpreter.png)
 
 ## 三種平板連線方式
 
