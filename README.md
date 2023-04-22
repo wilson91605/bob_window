@@ -2,10 +2,32 @@
 
 ## 下載程式
 
+1. 開啟Github網站
+2. Fork實驗室Bob-Python專案
+
+![fork](README_RES/fork.png)
+
+3. Fork之後帳號會出現一份自己的repo，右邊即為到時候git clone的時候需要用到的網址。
+
+![git_url](README_RES/git_url.png)
+
+4. 點選右邊下拉欄位的 [Settings -> Developer settings](https://github.com/settings/apps)
+
+5. 選擇Personal access tokens (classic)
+6. Generate New token，照下圖選擇過期日和權限
+
+![git_token](README_RES/git_token.png)
+
+7. token即為你存取github repo的密碼，只會顯示一次，妥善保管token。
+
+![token](README_RES/token.png)
+
+8. 把repo複製下來到本機，並更新子模組
+
 ```shell
 # pull Bob-python
-git clone https://[github Token]@github.com/VincentYeh-dev/Bob-python.git -b develop
-
+git clone https://[你的Token]@github.com/[你的帳號名稱]/Bob-python.git -b develop
+cd Bob-python
 #更新submodule
 git submodule init
 git submodule update --remote
@@ -27,12 +49,12 @@ git submodule update --remote
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install python3.8 python3.8-dev
-pip3 install virtualenv
+python3.8 -m pip install virtualenv
 ```
 2. 建置並進入虛擬環境
 
 ```shell
-virtualenv venv
+python3.8 -m virtualenv venv
 source venv/bin/activate
 pip install -U pip setuptools==57.5.0
 ```
@@ -51,7 +73,9 @@ pip install -U pip setuptools==57.5.0
 pip install -r requirements_xx_x.x.xx.txt
 ```
 
+4. 設定pycharm python interpreter
 
+![](README_RES/python-interpreter.png)
 
 ## 三種平板連線方式
 
@@ -126,51 +150,6 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl restart bluetooth.service
 ```
-
-
-
-### 在Jetson AGX 安裝 tensorflow
-
-[在Jetson 安裝tensorflow](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
-
-```shell=
-$ sudo apt-get update
-$ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
-
-$ sudo apt-get install python3-pip
-$ sudo pip3 install -U pip testresources setuptools==49.6.0 
-
-$ sudo pip3 install -U --no-deps numpy==1.19.4 future==0.18.2 mock==3.0.5 keras_preprocessing==1.1.2 keras_applications==1.0.8 gast==0.4.0 protobuf pybind11 cython pkgconfig packaging
-$ sudo env H5PY_SETUP_REQUIRES=0 pip3 install -U h5py==3.1.0
-
-$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50 tensorflow
-
-```
-
-查看tensorflow版本
-```shell=
-pip3 list |grep "tensor"
-tensorboard             2.8.0
-tensorboard-data-server 0.6.1
-tensorboard-plugin-wit  1.8.1
-tensorflow              2.8.0+nv22.5
-tensorflow-estimator    2.8.0
-```
-
-JP_VERSION=5.0.1 DP
-TF_VERSION=2.8.0
-NV_VERSION=22.5
-
-將``$NV_VERSION``、``$TF_VERSION``換成上方版本號
-
-進入虛擬環境後
-
-```shell=
-$ pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta setuptools testresources
-$ pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50 tensorflow==$TF_VERSION+nv$NV_VERSION
-```
-
-
 
 
 

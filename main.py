@@ -21,7 +21,7 @@ from visual.monitor.concrete.crt_camera import CameraMonitor
 from visual.monitor.framework.fw_monitor import CameraListener
 from visual.utils import visual_utils
 from communication.framework.fw_comm import CommDevice, ReConnectableDevice
-from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice, BluetoothServerDevice
+from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice
 from serial_utils import getSerialNameByDescription
 
 db_charset = 'UTF-8'
@@ -159,10 +159,10 @@ class MainProgram:
         # return TCPServerDevice("0.0.0.0", 4444, EOLPackageHandler())
 
         # 使用藍芽傳輸
-        return BluetoothServerDevice(EOLPackageHandler())
+        # return BluetoothServerDevice(EOLPackageHandler())
 
         # Using HC-05
-        # return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
+        return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
 
     def main(self):
         device = self.initialize_device()
