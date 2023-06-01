@@ -21,7 +21,7 @@ from visual.monitor.concrete.crt_camera import CameraMonitor
 from visual.monitor.framework.fw_monitor import CameraListener
 from visual.utils import visual_utils
 from communication.framework.fw_comm import CommDevice, ReConnectableDevice
-from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice
+from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice, TCPServerDevice
 from serial_utils import getSerialNameByDescription
 
 db_charset = 'UTF-8'
@@ -34,7 +34,7 @@ bt_description = ".*CP2102.*"
 # 機器人 UART/USB轉接器晶片名稱(使用正規表達式)
 bot_description = ".*FT232R.*"
 
-NO_ROBOT = True
+NO_ROBOT = False
 
 ID_OBJECT = 1
 ID_FACE = 2
@@ -162,7 +162,7 @@ class MainProgram:
         # return BluetoothServerDevice(EOLPackageHandler())
 
         # Using HC-05
-        return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
+         return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
 
     def main(self):
         device = self.initialize_device()
