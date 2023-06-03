@@ -54,24 +54,6 @@
     }
   },
   {
-    "id": "airplane",
-    "data": {
-      "name": "airplane",
-      "group": "Transportation",
-      "sentence": "I will take a airplane to Japan this summer",
-      "definition": "a vehicle designed for air travel that has wings and one or more engines",
-      "face": "happy",
-      "action": "airplane.csv",
-      "languages": [
-        {
-          "code": "zh_TW",
-          "tr_name": "飛機",
-          "tr_sentence": "在這個暑假我將要搭飛機去日本。"
-        }
-      ]
-    }
-  },
-  {
     "id": "bus",
     "data": {
       "name": "bus",
