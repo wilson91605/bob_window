@@ -2,7 +2,7 @@ from typing import Optional, List
 
 from communication.framework.fw_comm import CommDevice, PackageHandler, ReConnectableDevice
 
-bluetooth_import = False
+bluetooth_import = True
 tcp_import = True
 serial_import = True
 
