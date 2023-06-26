@@ -49,7 +49,7 @@
           "action": "tired.csv"
         },
         {
-          "name": "Sandwich",
+          "name": "sandwich",
           "translated": "三明治",
           "part_of_speech": "n",
           "image": "vocabulary_img_sandwich",
@@ -58,7 +58,7 @@
           "action": "sandwich.csv"
         },
         {
-          "name": "Pizza",
+          "name": "pizza",
           "translated": "披薩",
           "part_of_speech": "n",
           "image": "vocabulary_img_pizza",
@@ -67,7 +67,7 @@
           "action": "pizza.csv"
         },
         {
-          "name": "Donut",
+          "name": "donut",
           "translated": "甜甜圈",
           "part_of_speech": "n",
           "image": "vocabulary_img_donut",
@@ -76,7 +76,7 @@
           "action": "donut.csv"
         },
         {
-          "name": "Carrot",
+          "name": "carrot",
           "translated": "胡蘿蔔",
           "part_of_speech": "n",
           "image": "vocabulary_img_carrot",
@@ -85,7 +85,7 @@
           "action": "carrot.csv"
         },
         {
-          "name": "Cake",
+          "name": "cake",
           "translated": "蛋糕",
           "part_of_speech": "n",
           "image": "vocabulary_img_cake",
@@ -94,7 +94,7 @@
           "action": "cake.csv"
         },
         {
-          "name": "Hot dog",
+          "name": "hot dog",
           "translated": "熱狗",
           "part_of_speech": "n",
           "image": "vocabulary_img_hotdog",
@@ -103,7 +103,7 @@
           "action": "hotdog.csv"
         },
         {
-          "name": "Apple",
+          "name": "apple",
           "translated": "蘋果",
           "part_of_speech": "n",
           "image": "vocabulary_img_apple",
@@ -112,7 +112,7 @@
           "action": "apple.csv"
         },
         {
-          "name": "Banana",
+          "name": "banana",
           "translated": "香蕉",
           "part_of_speech": "n",
           "image": "vocabulary_img_banana",
@@ -121,7 +121,7 @@
           "action": "banana.csv"
         },
         {
-          "name": "Broccoli",
+          "name": "broccoli",
           "translated": "花椰菜",
           "part_of_speech": "n",
           "image": "vocabulary_img_broccoli",
@@ -226,7 +226,7 @@
           "image": "vocabulary_img_bench",
           "audio": "vocabulary_audio_bench",
           "definition": "a long, usually hard seat for two or more people, often found in public places",
-          "action": "bench"
+          "action": "bench.csv"
         },
         {
           "name": "horse",
@@ -263,15 +263,6 @@
           "audio": "vocabulary_audio_cow",
           "definition": "a large female farm animal kept to produce meat and milk",
           "action": "cow.csv"
-        },
-        {
-          "name": "backpack",
-          "translated": "背包",
-          "part_of_speech": "n",
-          "image": "vocabulary_img_backpack",
-          "audio": "vocabulary_audio_backpack",
-          "definition": "a large bag used to carry things on your back, used especially by people who go camping or walking",
-          "action": "backpack.csv"
         },
         {
           "name": "umbrella",
@@ -329,7 +320,7 @@
         },
         {
           "name": "couch",
-          "translated": "長椅",
+          "translated": "沙發",
           "part_of_speech": "n",
           "image": "vocabulary_img_couch",
           "audio": "vocabulary_audio_couch",
@@ -355,15 +346,6 @@
           "action": "chair.csv"
         },
         {
-          "name": "potted plant",
-          "translated": "盆栽",
-          "part_of_speech": "n",
-          "image": "vocabulary_img_pottedplant",
-          "audio": "vocabulary_audio_pottedplant",
-          "definition": "a plant that is grown in a pot",
-          "action": "pottedplant.csv"
-        },
-        {
           "name": "bed",
           "translated": "床",
           "part_of_speech": "n",
@@ -382,7 +364,7 @@
           "action": "toilet.csv"
         },
         {
-          "name": "TV",
+          "name": "tv",
           "translated": "電視",
           "part_of_speech": "n",
           "image": "vocabulary_img_tv",
@@ -443,15 +425,6 @@
           "audio": "vocabulary_audio_microwave",
           "definition": "an electric oven that uses waves of energy to cook or heat food quickly",
           "action": "microwave.csv"
-        },
-        {
-          "name": "oven",
-          "translated": "烤箱",
-          "part_of_speech": "n",
-          "image": "vocabulary_img_oven",
-          "audio": "vocabulary_audio_oven",
-          "definition": "the part of a cooker with a door, used to bake or roast food",
-          "action": "oven.csv"
         },
         {
           "name": "sink",
@@ -517,13 +490,130 @@
           "action": "teddybear.csv"
         },
         {
-          "name": "toothbrush",
-          "translated": "牙刷",
+          "name": "bird",
+          "translated": "鳥",
+          "definition": "a creature with feathers and wings, usually able to fly",
+          "part_of_speech": "creature",
+          "image": "object_bird",
+          "audio": "vocabulary_audio_bird",
+          "action": "bird.csv"
+        },
+        {
+          "name": "pizza",
+          "translated": "披薩",
+          "definition": "a large circle of flat bread baked with cheese, tomatoes, and sometimes meat and vegetables spread on top",
           "part_of_speech": "n",
-          "image": "vocabulary_img_toothbrush",
-          "audio": "vocabulary_audio_toothbrush",
-          "definition": "a small brush with a long handle that you use to clean your teeth",
-          "action": "toothbrush.csv"
+          "image": "vocabulary_img_pizza",
+          "audio": "vocabulary_audio_pizza",
+          "action": "pizza.csv"
+        },
+        {
+          "name": "car",
+          "translated": "車子",
+          "definition": "a road vehicle with an engine, four wheels, and seats for a small number of people",
+          "part_of_speech": "n",
+          "image": "object_car",
+          "audio": "vocabulary_audio_car",
+          "action": "car.csv"
+        },
+        {
+          "name": "bowl",
+          "translated": "碗",
+          "definition": "a round container that is open at the top and is deep enough to hold fruit, sugar, etc.",
+          "part_of_speech": "n",
+          "image": "object_bowl",
+          "audio": "vocabulary_audio_bowl",
+          "action": "bowl.csv"
+        },
+        {
+          "name": "cat",
+          "translated": "貓",
+          "definition": "a small animal with fur, four legs, a tail, and claws, usually kept as a pet or for catching mice",
+          "part_of_speech": "n",
+          "image": "object_cat",
+          "audio": "vocabulary_audio_cat",
+          "action": "cat.csv"
+        },
+        {
+          "name": "keyboard",
+          "translated": "鍵盤",
+          "definition": "the set of keys on a computer or typewriter that you press in order to make it work, or the row of keys on a musical instrument such as a piano",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_keyboard",
+          "audio": "vocabulary_audio_keyboard",
+          "action": "keyboard.csv"
+        },
+        {
+          "name": "sheep",
+          "translated": "綿羊",
+          "definition": "a farm animal with thick wool that eats grass and is kept for its wool, skin, and meat",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_sheep",
+          "audio": "vocabulary_audio_sheep",
+          "action": "sheep.csv"
+        },
+        {
+          "name": "zebra",
+          "translated": "斑馬",
+          "definition": "an African wild animal that looks like a horse, with black or brown and white lines on its body",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_zebra",
+          "audio": "vocabulary_audio_zebra",
+          "action": "zebra.csv"
+        },
+        {
+          "name": "elephant",
+          "translated": "大象",
+          "definition": "a very large grey mammal that has a trunk (= long nose) with which it can pick things up",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_elephant",
+          "audio": "vocabulary_audio_elephant",
+          "action": "elephant.csv"
+        },
+        {
+          "name": "orange",
+          "translated": "橘子",
+          "definition": "a round sweet fruit that has a thick orange skin and an orange centre divided into many parts",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_orange",
+          "audio": "vocabulary_audio_orange",
+          "action": "orange.csv"
+        },
+        {
+          "name": "dog",
+          "translated": "狗",
+          "definition": "a common animal with four legs, especially kept by people as a pet or to hunt or guard things",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_dog",
+          "audio": "vocabulary_audio_dog",
+          "action": "dog.csv"
+        },
+        {
+          "name": "bear",
+          "translated": "熊",
+          "definition": "a large, strong wild mammal with a thick fur coat that lives especially in colder parts of Europe, Asia, and North America",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_bear",
+          "audio": "vocabulary_audio_bear",
+          "action": "bear.csv"
+        },
+        {
+          "name": "giraffe",
+          "translated": "長頸鹿",
+          "definition": "a large African animal with a very long neck and long legs",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_giraffe",
+          "audio": "vocabulary_audio_giraffe",
+          "action": "giraffe.csv"
+        },
+        {
+          "name": "wine glass",
+          "translated": "葡萄酒杯",
+          "definition": "a glass for drinking wine, with a long stem and a round base",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_wineglass",
+          "audio": "vocabulary_audio_wineglass",
+          "action": "wineglass.csv"
         }
       ]
     }

@@ -3,10 +3,11 @@
     "id": "bicycle",
     "data": {
       "name": "bicycle",
+      "image": "vocabulary_img_bicycle",
       "group": "Transportation",
       "sentence": "Lets go riding bicycle this weekend!",
       "definition": "a two-wheeled vehicle that you sit on and move by turning the two pedals",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "bicycle.csv",
       "languages": [
         {
@@ -21,10 +22,11 @@
     "id": "motorcycle",
     "data": {
       "name": "motorcycle",
+      "image": "vocabulary_img_motorcycle",
       "group": "Transportation",
       "sentence": "My dad rides me to school on a motorcycle.",
       "definition": "a vehicle with two wheels and an engine",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "motorcycle.csv",
       "languages": [
         {
@@ -39,10 +41,11 @@
     "id": "airplane",
     "data": {
       "name": "airplane",
+      "image": "vocabulary_img_airplane",
       "group": "Transportation",
       "sentence": "I will take a airplane to Japan this summer",
       "definition": "a vehicle designed for air travel that has wings and one or more engines",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "airplane.csv",
       "languages": [
         {
@@ -57,10 +60,11 @@
     "id": "bus",
     "data": {
       "name": "bus",
+      "image": "vocabulary_img_bus",
       "group": "Transportation",
       "sentence": "I always take a bus to school.",
       "definition": "a large vehicle in which people are driven from one place to another",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "bus.csv",
       "languages": [
         {
@@ -75,10 +79,11 @@
     "id": "train",
     "data": {
       "name": "train",
+      "image": "vocabulary_img_train",
       "group": "Transportation",
       "sentence": "The train was not free of the station yet ",
       "definition": "a railway engine connected to carriages for carrying people or to wheeled containers for carrying goods",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "train.csv",
       "languages": [
         {
@@ -93,10 +98,11 @@
     "id": "truck",
     "data": {
       "name": "truck",
+      "image": "vocabulary_img_truck",
       "group": "Transportation",
       "sentence": "This truck is full of toys.",
       "definition": "a large road vehicle that is used for transporting large amounts of goods",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "truck.csv",
       "languages": [
         {
@@ -111,10 +117,11 @@
     "id": "boat",
     "data": {
       "name": "boat",
+      "image": "vocabulary_img_boat",
       "group": "Transportation",
       "sentence": "My father to go fishing on the sea tomorrow.",
       "definition": "a small vehicle for travelling on water",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "boat.csv",
       "languages": [
         {
@@ -129,10 +136,11 @@
     "id": "traffic light",
     "data": {
       "name": "traffic light",
-      "group": "Transportation",
+      "image": "vocabulary_img_trafficlight",
+      "group": "n",
       "sentence": "Turn left at the traffic lights.",
       "definition": "one of a set of red, yellow, and green lights that control the movement of vehicles, usually at a point where two or more roads join",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "trafficlight.csv",
       "languages": [
         {
@@ -147,10 +155,11 @@
     "id": "fire hydrant",
     "data": {
       "name": "fire hydrant",
-      "group": "Transportation",
+      "image": "vocabulary_img_firehydrant",
+      "group": "n",
       "sentence": "On every floor there is a fire hydrant.",
       "definition": "a large pipe in the street that firefighters can get water from to use to stop fires from burning",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "firehydrant.csv",
       "languages": [
         {
@@ -165,10 +174,11 @@
     "id": "stop sign",
     "data": {
       "name": "stop sign",
-      "group": "Transportation",
+      "image": "vocabulary_img_stopsign",
+      "group": "n",
       "sentence": "You always have to stop at a stop sign.",
       "definition": "a sign on the road that tells drivers of vehicles to stop and not to continue until it is safe",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "stopsign.csv",
       "languages": [
         {
@@ -183,10 +193,11 @@
     "id": "bench",
     "data": {
       "name": "bench",
-      "group": "Transportation",
+      "image": "vocabulary_img_bench",
+      "group": "n",
       "sentence": "They're sitting on a bench in the park.",
       "definition": "a long, usually hard seat for two or more people, often found in public places",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "bench.csv",
       "languages": [
         {
@@ -201,10 +212,11 @@
     "id": "horse",
     "data": {
       "name": "horse",
+      "image": "vocabulary_img_horse",
       "group": "creature",
       "sentence": "I'm learning how to ride a horse.",
       "definition": "a large animal with four legs that people ride on or use for carrying things or pulling vehicles",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "horse.csv",
       "languages": [
         {
@@ -219,10 +231,11 @@
     "id": "skis",
     "data": {
       "name": "skis",
-      "group": "creature",
+      "image": "vocabulary_img_skis",
+      "group": "n",
       "sentence": "The girl asked her father to buy a pair of skis for her.",
       "definition": "one of a pair of long, flat narrow pieces of wood or plastic that curve up at the front and are fastened to boots so that the wearer can move quickly and easily over snow",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "skis.csv",
       "languages": [
         {
@@ -237,10 +250,11 @@
     "id": "snowboard",
     "data": {
       "name": "snowboard",
-      "group": "creature",
+      "image": "vocabulary_img_snowboard",
+      "group": "n",
       "sentence": "Snowboard parks are becoming more popular. ",
       "definition": "to slide on the snow by standing on a specially shaped board",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "snowboard.csv",
       "languages": [
         {
@@ -255,10 +269,11 @@
     "id": "cow",
     "data": {
       "name": "cow",
+      "image": "vocabulary_img_cow",
       "group": "creature",
       "sentence": "Cows supply us milk .",
       "definition": "a large female farm animal kept to produce meat and milk",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "cow.csv",
       "languages": [
         {
@@ -270,31 +285,14 @@
     }
   },
   {
-    "id": "backpack",
-    "data": {
-      "name": "backpack",
-      "group": "creature",
-      "sentence": "Is there a pencil in your backpack?",
-      "definition": "a large bag used to carry things on your back, used especially by people who go camping or walking",
-      "face": "happy",
-      "action": "backpack.csv",
-      "languages": [
-        {
-          "code": "zh_TW",
-          "tr_name": "背包",
-          "tr_sentence": "你的背包裡有鉛筆嗎？"
-        }
-      ]
-    }
-  },
-  {
     "id": "umbrella",
     "data": {
       "name": "umbrella",
-      "group": "creature",
+      "image": "vocabulary_img_umbrella",
+      "group": "n",
       "sentence": "May i borrow your umbrella ?",
       "definition": "a device for protection against the rain",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "umbrella.csv",
       "languages": [
         {
@@ -306,31 +304,14 @@
     }
   },
   {
-    "id": "tie",
-    "data": {
-      "name": "tie",
-      "group": "creature",
-      "sentence": "She bought her husband a tie.",
-      "definition": "a long, thin piece of material that is worn under a shirt collar, especially by men, and tied in a knot at the front",
-      "face": "happy",
-      "action": "tie.csv",
-      "languages": [
-        {
-          "code": "zh_TW",
-          "tr_name": "領帶",
-          "tr_sentence": "她買給她先生一條領帶。"
-        }
-      ]
-    }
-  },
-  {
     "id": "frisbee",
     "data": {
       "name": "frisbee",
-      "group": "creature",
+      "image": "vocabulary_img_frisbee",
+      "group": "n",
       "sentence": "I like to play frisbee with my dog.",
       "definition": "a brand name for a circular piece of plastic with a curved edge that is thrown between people as a game",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "frisbee.csv",
       "languages": [
         {
@@ -345,10 +326,11 @@
     "id": "suitcase",
     "data": {
       "name": "suitcase",
-      "group": "creature",
+      "image": "vocabulary_img_suitcase",
+      "group": "n",
       "sentence": "I crowded everything into my suitcase.",
       "definition": "a large, rectangular container with a handle, for carrying clothes and possessions while travelling",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "suitcase.csv",
       "languages": [
         {
@@ -363,10 +345,11 @@
     "id": "fork",
     "data": {
       "name": "fork",
-      "group": "creature",
+      "image": "vocabulary_img_fork",
+      "group": "n",
       "sentence": "He picked up his fork and knife.",
       "definition": "a small object with three or four points and a handle, that you use to pick up food and eat with",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "fork.csv",
       "languages": [
         {
@@ -381,10 +364,11 @@
     "id": "spoon",
     "data": {
       "name": "spoon",
-      "group": "creature",
+      "image": "vocabulary_img_spoon",
+      "group": "n",
       "sentence": "She stirred her coffee with a spoon.",
       "definition": "an object consisting of a round, hollow part and a handle, used for mixing, serving, and eating food",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "spoon.csv",
       "languages": [
         {
@@ -399,10 +383,11 @@
     "id": "kite",
     "data": {
       "name": "kite",
-      "group": "creature",
+      "image": "vocabulary_img_kite",
+      "group": "n",
       "sentence": "Your kite looks like bird.",
       "definition": "a frame covered with cloth or plastic and joined to a long string, that you fly in the air when the weather is windy",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "kite.csv",
       "languages": [
         {
@@ -417,16 +402,17 @@
     "id": "couch",
     "data": {
       "name": "couch",
-      "group": "creature",
-      "sentence": "There are many couch in the park.",
+      "image": "vocabulary_img_couch",
+      "group": "n",
+      "sentence": "Lie down on the couch if you're feeling ill.",
       "definition": "a long, usually hard seat for two or more people, often found in public places",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "couch.csv",
       "languages": [
         {
           "code": "zh_TW",
-          "tr_name": "長椅",
-          "tr_sentence": "公園裡有很多長椅"
+          "tr_name": "沙發",
+          "tr_sentence": "如果你感覺不舒服就躺到沙發上去。"
         }
       ]
     }
@@ -435,10 +421,11 @@
     "id": "chair",
     "data": {
       "name": "chair",
-      "group": "creature",
+      "image": "vocabulary_img_chair",
+      "group": "n",
       "sentence": "Chair can be made by wooden.",
       "definition": "a seat for one person that has a back, usually four legs, and sometimes two arms",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "chair.csv",
       "languages": [
         {
@@ -450,31 +437,14 @@
     }
   },
   {
-    "id": "potted plant",
-    "data": {
-      "name": "potted plant",
-      "group": "creature",
-      "sentence": "You can plant whatever you want on your potted plant .",
-      "definition": "a plant that is grown in a pot",
-      "face": "happy",
-      "action": "pottedplant.csv",
-      "languages": [
-        {
-          "code": "zh_TW",
-          "tr_name": "盆栽",
-          "tr_sentence": "你可以在你的盆栽上種任何東西"
-        }
-      ]
-    }
-  },
-  {
     "id": "bed",
     "data": {
       "name": "bed",
-      "group": "creature",
+      "image": "vocabulary_img_bed",
+      "group": "n",
       "sentence": "It's 10 o'clock now,time to go to bed.",
       "definition": "a large, rectangular piece of furniture, often with four legs, used for sleeping on",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "bed.csv",
       "languages": [
         {
@@ -489,10 +459,11 @@
     "id": "toilet",
     "data": {
       "name": "toilet",
-      "group": "creature",
+      "image": "vocabulary_img_toilet",
+      "group": "n",
       "sentence": "Toilets always appear in the corner of a building.",
       "definition": "a room or small building in a public place in which there are several toilets",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "toilet.csv",
       "languages": [
         {
@@ -504,13 +475,14 @@
     }
   },
   {
-    "id": "TV",
+    "id": "tv",
     "data": {
-      "name": "TV",
-      "group": "creature",
-      "sentence": "As the time go on,people usually use cellphones instead of TV.",
+      "name": "tv",
+      "image": "vocabulary_img_tv",
+      "group": "n",
+      "sentence": "As the time go on,people usually use cellphones instead of tv.",
       "definition": "a system for transmitting visual images and sound that are reproduced on screens, chiefly used to broadcast programs for entertainment, information, and education.",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "tv.csv",
       "languages": [
         {
@@ -525,10 +497,11 @@
     "id": "laptop",
     "data": {
       "name": "laptop",
-      "group": "creature",
+      "image": "vocabulary_img_laptop",
+      "group": "n",
       "sentence": "My father is an engineer, so he always carry a laptop.",
       "definition": "a computer that is portable and suitable for use while traveling.",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "laptop.csv",
       "languages": [
         {
@@ -542,11 +515,12 @@
   {
     "id": "surfboard",
     "data": {
-      "name": "couch",
-      "group": "surfboard",
+      "name": "surfboard",
+      "image": "vocabulary_img_surfboard",
+      "group": "n",
       "sentence": "Before surfing, you need to have a surfboard first.",
       "definition": "a long, narrow streamlined board used in surfing.",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "surfboard.csv",
       "languages": [
         {
@@ -561,10 +535,11 @@
     "id": "tennis racket",
     "data": {
       "name": "tennis racket",
-      "group": "creature",
+      "image": "vocabulary_img_tennisracket",
+      "group": "n",
       "sentence": "A profetional tennis racket cost a lot.",
       "definition": "an object used for hitting the ball in various sports, consisting of a net fixed tightly to a round frame with a long handle",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "tennisracket.csv",
       "languages": [
         {
@@ -579,10 +554,11 @@
     "id": "cup",
     "data": {
       "name": "cup",
-      "group": "creature",
+      "image": "vocabulary_img_cup",
+      "group": "n",
       "sentence": "I get a cup from exchange presents on Christmas.",
       "definition": "a small, round container, often with a handle, used for drinking tea, coffee, etc.",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "cup.csv",
       "languages": [
         {
@@ -597,10 +573,11 @@
     "id": "cell phone",
     "data": {
       "name": "cell phone",
-      "group": "creature",
+      "image": "vocabulary_img_cellphone",
+      "group": "n",
       "sentence": "Cellphone is too hard for my grandparents to learn. ",
       "definition": "a phone that is connected to the phone system by radio instead of by a wire, and can be used anywhere where its signals can be received",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "cellphone.csv",
       "languages": [
         {
@@ -615,10 +592,11 @@
     "id": "microwave",
     "data": {
       "name": "microwave",
-      "group": "creature",
+      "image": "vocabulary_img_microwave",
+      "group": "n",
       "sentence": "You can't put anything content mental into microwave.",
       "definition": "an electric oven that uses waves of energy to cook or heat food quickly",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "microwave.csv",
       "languages": [
         {
@@ -630,31 +608,14 @@
     }
   },
   {
-    "id": "oven",
-    "data": {
-      "name": "oven",
-      "group": "creature",
-      "sentence": "Cake is made by oven.",
-      "definition": "the part of a cooker with a door, used to bake or roast food",
-      "face": "happy",
-      "action": "oven.csv",
-      "languages": [
-        {
-          "code": "zh_TW",
-          "tr_name": "烤箱",
-          "tr_sentence": "蛋糕是用烤箱做出來的"
-        }
-      ]
-    }
-  },
-  {
     "id": "sink",
     "data": {
       "name": "sink",
-      "group": "creature",
+      "image": "vocabulary_img_sink",
+      "group": "n",
       "sentence": "Before you cock vegetable, you have to wash it in the sink.",
       "definition": "a bowl that is attached to the wall in a kitchen or bathroom in which you wash dishes or your hands, etc.",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "sink.csv",
       "languages": [
         {
@@ -669,10 +630,11 @@
     "id": "refrigerator",
     "data": {
       "name": "refrigerator",
-      "group": "creature",
+      "image": "vocabulary_img_refrigerator",
+      "group": "n",
       "sentence": "It's hard to image that how ancient peaple keep food fresh without refrigerator.",
       "definition": "a piece of kitchen equipment that uses electricity to preserve food at a cold temperature",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "refrigerator.csv",
       "languages": [
         {
@@ -687,10 +649,11 @@
     "id": "book",
     "data": {
       "name": "book",
-      "group": "creature",
+      "image": "vocabulary_img_book",
+      "group": "n",
       "sentence": "A good book can bring you to a another world.",
       "definition": "a set of pages that have been fastened together inside a cover to be read or written in",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "book.csv",
       "languages": [
         {
@@ -705,10 +668,11 @@
     "id": "clock",
     "data": {
       "name": "clock",
-      "group": "creature",
+      "image": "vocabulary_img_clock",
+      "group": "n",
       "sentence": "People without clock in ancient, work when sunrise and rest when sunset.",
       "definition": "a device for measuring and showing time, usually found in or on a building and not worn by a person",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "clock.csv",
       "languages": [
         {
@@ -723,10 +687,11 @@
     "id": "vase",
     "data": {
       "name": "vase",
-      "group": "creature",
+      "image": "vocabulary_img_vase",
+      "group": "n",
       "sentence": "There are lots of image on the vase to make it more beautiful.",
       "definition": "a container for holding flowers or for decoration",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "vase.csv",
       "languages": [
         {
@@ -741,10 +706,11 @@
     "id": "scissors",
     "data": {
       "name": "scissors",
-      "group": "creature",
+      "image": "vocabulary_img_scissors",
+      "group": "n",
       "sentence": "You must be careful when using scissors.",
       "definition": "a device used for cutting materials such as paper, cloth, and hair, consisting of two sharp blades that are joined in the middle, and two handles with holes to put your fingers through",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "scissors.csv",
       "languages": [
         {
@@ -759,10 +725,11 @@
     "id": "teddy bear",
     "data": {
       "name": "teddy bear",
-      "group": "creature",
+      "image": "vocabulary_img_teddybear",
+      "group": "n",
       "sentence": "Everyone has their own teddy bear when thy was young.",
       "definition": "a soft toy bear",
-      "face": "happy",
+      "face": "face_gif_happy",
       "action": "teddybear.csv",
       "languages": [
         {
@@ -774,20 +741,422 @@
     }
   },
   {
-    "id": "toothbrush",
+    "id": "bird",
     "data": {
-      "name": "toothbrush",
-      "group": "creature",
-      "sentence": "I use toothbrush to brush my teeth everyday.",
-      "definition": "a small brush with a long handle that you use to clean your teeth",
-      "face": "happy",
-      "action": "toothbrush.csv",
+      "name": "bird",
+      "image": "object_bird",
+      "group": "n",
+      "sentence": "The bird is flying in the sky.",
+      "definition": "a creature with feathers and wings, usually able to fly",
+      "face": "face_gif_happy",
+      "action": "bird.csv",
       "languages": [
         {
           "code": "zh_TW",
-          "tr_name": "牙刷",
-          "tr_sentence": "我每天都用牙刷刷我的牙齒"
+          "tr_name": "鳥",
+          "tr_sentence": "鳥兒在天上飛。"
         }
+      ]
+    }
+  },
+  {
+    "id": "pizza",
+    "data": {
+      "name": "pizza",
+      "image": "vocabulary_img_pizza",
+      "group": "n",
+      "sentence": "I like lots of different pizza toppings.",
+      "definition": "a large circle of flat bread baked with cheese, tomatoes, and sometimes meat and vegetables spread on top",
+      "face": "face_gif_happy",
+      "action": "pizza.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "披薩",
+          "tr_sentence": "我喜歡好多不同的披薩餡料。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hot dog",
+    "data": {
+      "name": "hotdog",
+      "image": "vocabulary_img_hotdog",
+      "group": "n",
+      "sentence": "She put a dash of french mustard on the hot dogs.",
+      "definition": "a cooked sausage eaten in a long soft piece of bread, often with ketchup or mustard",
+      "face": "face_gif_happy",
+      "action": "hotdog.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "熱狗",
+          "tr_sentence": "她在熱狗上放了少量的芥末。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "carrot",
+    "data": {
+      "name": "carrot",
+      "image": "vocabulary_img_carrot",
+      "group": "n",
+      "sentence": "You should eat such vegetables as carrot, celery and spinach.",
+      "definition": "a long pointed orange root eaten as a vegetable",
+      "face": "face_gif_happy",
+      "action": "carrot.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "胡蘿蔔",
+          "tr_sentence": "你應該吃胡蘿蔔、芹菜和菠菜這類的蔬菜。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "apple",
+    "data": {
+      "name": "apple",
+      "image": "vocabulary_img_apple",
+      "group": "n",
+      "sentence": "Apples and melons are my favourite fruits.",
+      "definition": "a round fruit with firm, white flesh and a green, red, or yellow skin",
+      "face": "face_gif_happy",
+      "action": "apple.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "蘋果",
+          "tr_sentence": "蘋果和甜瓜是我喜愛的水果。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "donut",
+    "data": {
+      "name": "donut",
+      "image": "vocabulary_img_donut",
+      "group": "n",
+      "sentence": " I see a cloud that looks like a donut!",
+      "definition": "a small fried cake of sweetened dough, typically in the shape of a ball or ring.",
+      "face": "face_gif_happy",
+      "action": "donut.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "甜甜圈",
+          "tr_sentence": "我看見一片雲很像甜甜圈。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bowl",
+    "data": {
+      "name": "bowl",
+      "image": "object_bowl",
+      "group": "n",
+      "sentence": "That bowl is really beautiful.",
+      "definition": "a round container that is open at the top and is deep enough to hold fruit, sugar, etc.",
+      "face": "face_gif_happy",
+      "action": "bowl.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "碗",
+          "tr_sentence": "那碗真漂亮。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "banana",
+    "data": {
+      "name": "banana",
+      "image": "vocabulary_img_banana",
+      "group": "n",
+      "sentence": "His father made a fortune out of bananas.",
+      "definition": "a long, curved fruit with yellow skin and soft, sweet, white flesh (果肉）inside.",
+      "face": "face_gif_happy",
+      "action": "banana.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "香蕉",
+          "tr_sentence": "他的父親是經營香蕉發財的。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "car",
+    "data": {
+      "name": "car",
+      "image": "object_car",
+      "group": "n",
+      "sentence": "My new car is broken.",
+      "definition": "a road vehicle with an engine, four wheels, and seats for a small number of people",
+      "face": "face_gif_happy",
+      "action": "car.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "車子",
+          "tr_sentence": "我的新車壞掉了。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cat",
+    "data": {
+      "name": "cat",
+      "image": "object_cat",
+      "group": "n",
+      "sentence": "The cat is very cute.",
+      "definition": "a small animal with fur, four legs, a tail, and claws, usually kept as a pet or for catching mice",
+      "face": "face_gif_happy",
+      "action": "cat.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "貓",
+          "tr_sentence": "貓很可愛。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sandwich",
+    "data": {
+      "name": "sandwich",
+      "image": "vocabulary_img_sandwich",
+      "group": "n",
+      "sentence": "To make a ham sandwich you put a slice of ham between two slices of bread.",
+      "definition": "two pieces of bread with cheese, salad, or meat, usually cold, between them",
+      "face": "face_gif_happy",
+      "action": "sandwich.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "三明治",
+          "tr_sentence": "把一片火腿夾在兩片麵包之間就做成了火腿三明治。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "broccoli",
+    "data": {
+      "name": "broccoli",
+      "image": "vocabulary_img_broccoli",
+      "group": "n",
+      "sentence": "For dinner, he likes chicken and broccoli.",
+      "definition": "a vegetable with green stalks(莖)and green top (表面).",
+      "face": "face_gif_happy",
+      "action": "broccoli.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "花椰菜",
+          "tr_sentence": "晚餐他喜歡吃雞肉和花椰菜。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cake",
+    "data": {
+      "name": "cake",
+      "image": "object_cake",
+      "group": "n",
+      "sentence": "This cake is delicious.",
+      "definition": "a sweet food made with a mixture of flour, egg, fat, and sugar",
+      "face": "face_gif_happy",
+      "action": "cake.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "蛋糕",
+          "tr_sentence": "這個蛋糕很好吃。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "keyboard",
+    "data": {
+      "name": "keyboard",
+      "image": "vocabulary_img_keyboard",
+      "group": "n",
+      "sentence": "The keyboard plugs in at the back of the computer.",
+      "definition": "the set of keys on a computer or typewriter that you press in order to make it work, or the row of keys on a musical instrument such as a piano",
+      "face": "face_gif_happy",
+      "action": "keyboard.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "鍵盤",
+          "tr_sentence": "鍵盤插入電腦背面。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sheep",
+    "data": {
+      "name": "sheep",
+      "image": "vocabulary_img_sheep",
+      "group": "n",
+      "sentence": "We heard sheep bleating in the field.",
+      "definition": "a farm animal with thick wool that eats grass and is kept for its wool, skin, and meat",
+      "face": "face_gif_happy",
+      "action": "sheep.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "綿羊",
+          "tr_sentence": "我們聽見綿羊在田野裡咩咩叫。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zebra",
+    "data": {
+      "name": "zebra",
+      "image": "vocabulary_img_zebra",
+      "group": "n",
+      "sentence": "There are several species of zebra. ",
+      "definition": "an African wild animal that looks like a horse, with black or brown and white lines on its body",
+      "face": "face_gif_happy",
+      "action": "zebra.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "斑馬",
+          "tr_sentence": "斑馬有好幾種。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "elephant",
+    "data": {
+      "name": "elephant",
+      "image": "vocabulary_img_elephant",
+      "group": "n",
+      "sentence": "I love to see giraffes and elephants.",
+      "definition": "a very large grey mammal that has a trunk (= long nose) with which it can pick things up",
+      "face": "face_gif_happy",
+      "action": "elephant.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "大象",
+          "tr_sentence": "我喜愛看長頸鹿和大象。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "orange",
+    "data": {
+      "name": "orange",
+      "image": "vocabulary_img_orange",
+      "group": "n",
+      "sentence": "The orange has a scent all its own.",
+      "definition": "a round sweet fruit that has a thick orange skin and an orange centre divided into many parts",
+      "face": "face_gif_happy",
+      "action": "orange.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "橘子",
+          "tr_sentence": "橘子有一種獨特的香味。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dog",
+    "data": {
+      "name": "dog",
+      "image": "vocabulary_img_dog",
+      "group": "n",
+      "sentence": "We could hear dogs barking in the distance.",
+      "definition": "a common animal with four legs, especially kept by people as a pet or to hunt or guard things",
+      "face": "face_gif_happy",
+      "action": "dog.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "狗",
+          "tr_sentence": "我們可以聽到遠處的狗叫聲。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bear",
+    "data": {
+      "name": "bear",
+      "image": "vocabulary_img_bear",
+      "group": "n",
+      "sentence": "I'm going to the zoo to see the bear.",
+      "definition": "a large, strong wild mammal with a thick fur coat that lives especially in colder parts of Europe, Asia, and North America",
+      "face": "face_gif_happy",
+      "action": "bear.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "熊",
+          "tr_sentence": "我要去動物園看熊。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "giraffe",
+    "data": {
+      "name": "giraffe",
+      "image": "vocabulary_img_giraffe",
+      "group": "n",
+      "sentence": "I love to see giraffes.",
+      "definition": "a large African animal with a very long neck and long legs",
+      "face": "face_gif_happy",
+      "action": "giraffe.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "長頸鹿",
+          "tr_sentence": "我喜愛看長頸鹿。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wine glass",
+    "data": {
+      "name": "wine glass",
+      "image": "vocabulary_img_wineglass",
+      "group": "n",
+      "sentence": "He stepped forward to refill the wine glasses.",
+      "definition": "a glass for drinking wine, with a long stem and a round base",
+      "face": "face_gif_happy",
+      "action": "wineglass.csv",
+
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "葡萄酒杯",
+          "tr_sentence": "他上前給酒杯加滿酒。"
+        }
+
       ]
     }
   }
