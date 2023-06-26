@@ -156,13 +156,13 @@ class MainProgram:
 
     def initialize_device(self) -> ReConnectableDevice:
         # 使用TCP傳輸
-        # return TCPServerDevice("0.0.0.0", 4444, EOLPackageHandler())
+        #return TCPServerDevice("0.0.0.0", 4444, EOLPackageHandler())
 
         # 使用藍芽傳輸
         # return BluetoothServerDevice(EOLPackageHandler())
 
         # Using HC-05
-         return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
+        return SerialServerDevice(getSerialNameByDescription(bt_description), 38400, EOLPackageHandler())
 
     def main(self):
         device = self.initialize_device()
