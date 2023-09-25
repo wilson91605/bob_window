@@ -727,7 +727,7 @@
       "name": "teddy bear",
       "image": "vocabulary_img_teddybear",
       "group": "n",
-      "sentence": "Everyone has their own teddy bear when thy was young.",
+      "sentence": "Everyone has their own teddy bear when they was young.",
       "definition": "a soft toy bear",
       "face": "face_gif_happy",
       "action": "teddybear.csv",
