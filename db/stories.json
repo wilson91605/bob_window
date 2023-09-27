@@ -226,5 +226,87 @@
         }
       ]
     }
+  },
+  {
+    "id": "The story of moon festival" ,
+    "data": {
+      "name": "THE LEGEND OF MOON FESTIVAL",
+      "total": 11,
+      "pages": [
+        {
+          "text": "THE STORY OF Hou Yi and Chang E, A CHINESE MOON FESTIVAl STORY",
+          "audio": "story_audio_the_story_of_moon_title",
+          "image": "face_gif_happy",
+          "action": ""
+        },
+        {
+          "text": "Once upon a time, there were 10 suns in the sky, so it was very hot.",
+          "audio": "story_audio_the_story_of_moon_1",
+          "image": "face_gif_surprise",
+          "action": "storyaction_start.csv"
+        },
+        {
+          "text": "there was a strong archer, and his name was Hou Yi.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_moon_2",
+          "action": "powerful.csv"
+        },
+        {
+          "text": "One day, he shot down nine of the suns, leaving only one sun in the sky.",
+          "image": "face_gif_sad",
+          "audio": "story_audio_the_story_of_moon_3",
+          "action": ""
+        },
+        {
+          "text": "The Queen Mother of the West was very happy because Hou Yi saved people, She gave a pill as a gift.",
+          "image": "face_gif_love_eyes",
+          "audio": "story_audio_the_story_of_moon_4",
+          "action": "happy.csv"
+        },
+        {
+          "text": "However, when Hou Yi was not ay home, a robber came in and tried to rob the pill. Chang E had no choice but to eat the whole pill.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_moon_5",
+          "action": "storyaction_2.csv"
+        },
+        {
+          "text": "After Chang E ate the pill, she flew to the moon.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_moon_6",
+          "action": "fly.csv"
+        },
+        {
+          "text": "Hou Yi knew it, so he was very sad.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_moon_7",
+          "action": "sad.csv"
+        },
+        {
+          "text": "Hou Yi prepared some fruits and mooncakes and looked at the moon on the moon festival every year.Afterwards, He missed Chang E very much.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_moon_8",
+          "action": ""
+        },
+        {
+          "text": "On the moon, Chang E was also very lonely.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_moon_9",
+          "action": "sad.csv"
+        },
+         {
+          "text": "But Fortunately, she made new friend, the Jade rabbit.",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_moon_10",
+          "action": "happy.csv"
+        },
+        {
+          "text": "This is the legend of Moon Festival.It is on the fifteenth day of August in the lunar calendar",
+          "image": "face_gif_happy",
+          "audio": "story_audio_the_story_of_moon_11",
+          "action": "storyaction_end.csv"
+        }
+      ]
+    }
   }
+
 ]
