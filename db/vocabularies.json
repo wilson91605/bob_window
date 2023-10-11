@@ -4,6 +4,150 @@
     "data": {
       "name": "Vocabularies",
       "vocabularies": [
+          {
+          "name": "Sun",
+          "translated": "太陽",
+          "definition": "the star round which the earth orbits.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_sun",
+          "audio": "vocabulary_audio_3_sun",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Moon",
+          "translated": "月亮",
+          "definition": "the natural satellite of the earth, visible (chiefly at night) by reflected light from the sun.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_moon",
+          "audio": "vocabulary_audio_3_moon",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Sky",
+          "translated": "天空",
+          "definition": "the region of the atmosphere and outer space seen from the earth.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_sky",
+          "audio": "vocabulary_audio_3_sky",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Archer",
+          "translated": "射手",
+          "definition": "a person who shoots with a bow and arrows, especially at a target as a sport.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_archer",
+          "audio": "vocabulary_audio_3_archer",
+          "action": "powerful.csv"
+        },
+          {
+          "name": "Legend",
+          "translated": "傳說",
+          "definition": "a traditional story sometimes popularly regarded as historical but not authenticated.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_legend",
+          "audio": "vocabulary_audio_3_legend",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Festival",
+          "translated": "節慶",
+          "definition": "a day or period of celebration, typically for religious reasons.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_festival",
+          "audio": "vocabulary_audio_3_festival",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Mooncake",
+          "translated": "月餅",
+          "definition": "a round cake eaten during the Chinese Moon Festival.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_mooncake",
+          "audio": "vocabulary_audio_3_mooncake",
+          "action": "cake.csv"
+        },
+          {
+          "name": "Pill",
+          "translated": "仙丹",
+          "definition": "a small round mass of solid medicine for swallowing whole.",
+          "part_of_speech": "n",
+          "image": "vocabulary_img_pill",
+          "audio": "vocabulary_audio_3_pill",
+          "action": "cake.csv"
+        },
+          {
+          "name": "Hot",
+          "translated": "熱的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_hot",
+          "audio": "vocabulary_audio_3_hot",
+          "action": "sad.csv"
+        },
+          {
+          "name": "Happy",
+          "translated": "開心的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_happy",
+          "audio": "vocabulary_audio_3_happy",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Sad",
+          "translated": "傷心的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_sad",
+          "audio": "vocabulary_audio_3_sad",
+          "action": "sad.csv"
+        },
+          {
+          "name": "Strong",
+          "translated": "強壯的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_strong",
+          "audio": "vocabulary_audio_3_strong",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Lonely",
+          "translated": "孤單的",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_lonely",
+          "audio": "vocabulary_audio_3_lonely",
+          "action": "sad.csv"
+        },
+          {
+          "name": "Rob",
+          "translated": "搶",
+          "definition": "feeling or showing pleasure",
+          "part_of_speech": "v",
+          "image": "vocabulary_img_rob",
+          "audio": "vocabulary_audio_3_rob",
+          "action": "happy.csv"
+        },
+          {
+          "name": "Eat",
+          "translated": "吃",
+          "definition": "put (food) into the mouth and chew and swallow it.",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_eat",
+          "audio": "vocabulary_audio_3_eat",
+          "action": "pizza.csv"
+        },
+          {
+          "name": "Fly",
+          "translated": "飛",
+          "definition": "move through the air using wings.",
+          "part_of_speech": "adj",
+          "image": "vocabulary_img_fly",
+          "audio": "vocabulary_audio_3_fly",
+          "action": "happy.csv"
+        },
         {
           "name": "Happy",
           "translated": "開心的",
