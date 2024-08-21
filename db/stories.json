@@ -307,6 +307,56 @@
         }
       ]
     }
+  },
+{
+    "id": "The story of Dragon Boat Festival" ,
+    "data": {
+      "name": "THE LEGEND OF DRAGON BOAT FESTIVAL",
+      "total": 6,
+      "pages": [
+        {
+          "text": "The Story of Qu Yuan and the Dragon Boat Festival in China",
+          "audio": "story_audio_the_story_of_bdf_0",
+          "image": "face_gif_happy",
+          "action": "happy.csv"
+        },
+        {
+          "text": "In ancient China, during the Warring States period, there was a poet and statesman named Qu Yuan who served the Kingdom of Chu.",
+          "audio": "story_audio_the_story_of_bdf_1",
+          "image": "face_gif_happy",
+          "action": ""
+        },
+        {
+          "text": "He was deeply loyal and patriotic, but he was ostracized by the nobles.",
+          "audio": "story_audio_the_story_of_bdf_2",
+          "image": "face_gif_surprise",
+          "action": "happy.csv"
+        },
+        {
+          "text": "Later, when the Kingdom of Chu was conquered,Qu Yuan, in deep sorrow and anger, drowned himself in the river.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_bdf_3",
+          "action": "sad.csv"
+        },
+        {
+          "text": "Upon hearing the news, the local people paddled their boats out to search for him but could not find Qu Yuan.",
+          "image": "face_gif_sad",
+          "audio": "story_audio_the_story_of_bdf_4",
+          "action": "sink.csv"
+        },
+        {
+          "text": "To prevent fish and shrimp from harming his body, they threw glutinous rice and artemisia leaves into the water.",
+          "image": "face_gif_love_eyes",
+          "audio": "story_audio_the_story_of_bdf_5",
+          "action": "happy.csv"
+        },
+        {
+          "text": "During the Dragon Boat Festival, people race dragon boats and eat zongzi to commemorate Qu Yuan and express their love and loyalty to their country.",
+          "image": "face_gif_surprise",
+          "audio": "story_audio_the_story_of_bdf_6",
+          "action": "storyaction_2.csv"
+        }
+      ]
+    }
   }
-
 ]

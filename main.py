@@ -29,10 +29,10 @@ CMD_OBJECT_DETECTOR = "OBJECT_DETECTOR "
 CMD_FACE_DETECTOR = "FACE_DETECTOR "
 
 # 藍芽HC-05模組 UART/USB轉接器晶片名稱(使用正規表達式)
-bt_description = ".*CP2102.*"
+bt_description = ".*CP210x.*"#".*CP210x.*"
 
 # 機器人 UART/USB轉接器晶片名稱(使用正規表達式)
-bot_description = ".*FT232R.*"
+bot_description = ".*USB Serial Port.*"#".*FT232R.*"
 
 NO_ROBOT = False
 
@@ -89,7 +89,7 @@ class MainCameraListener(CameraListener):
                 # 透過藍芽送出資料至互動介面
                 self.sendString(jsonString)
                 # 至少等待17秒才繼續進行影像辨識
-                self.face_timer = time.time() + 17
+                self.face_timer = time.time() + 10 # 17
 
         # id=2 當辨識到物品時
         elif detector_id == ID_OBJECT:
@@ -167,7 +167,7 @@ class MainProgram:
     def main(self):
         device = self.initialize_device()
         self._camera_monitor.registerDetector(FaceDetector(ID_FACE), False)
-        self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
+        self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT), False)#self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
         self._camera_monitor.start()
 
         while True:
