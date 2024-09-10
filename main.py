@@ -115,14 +115,17 @@ class MainCameraListener(CameraListener):
                 return
 
             selected_object = data[max_index].result
-            obj: Optional[json] = object_db.queryForId(selected_object['name'])
+            obj: Optional[json] = object_db.queryForstoryID(selected_object['name'])
             if obj is not None:
-                data: json = obj['data']
-                sendData = {"id": -1, "response_type": "json_object", "content": "single_object", "data": data}
-                jsonString = json.dumps(sendData, ensure_ascii=False)
-                print("Send:", jsonString)
-                # 透過藍芽送出資料至互動介面
-                self.sendString(jsonString)
+                for page in obj['m_data']['pages']:
+                    if page['id'] == selected_object['name']:  # 比較 id 和物體名稱
+                        data: json = page['data']
+                        sendData = {"id": -1, "response_type": "json_object", "content": "single_object", "data": data}
+                        jsonString = json.dumps(sendData, ensure_ascii=False)
+                        print("Send:", jsonString)
+                        # 透過藍芽送出資料至互動介面
+                        self.sendString(jsonString)
+                        break
                 # 至少等待17秒才繼續進行影像辨識
                 self.object_timer = time.time() + 17
 
@@ -196,6 +199,7 @@ class MainProgram:
 
         if command.startswith(CMD_OBJECT_DETECTOR):
             if command[len(CMD_OBJECT_DETECTOR):] == "ENABLE":
+                print("ENABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, True)
             elif command[len(CMD_OBJECT_DETECTOR):] == "DISABLE":
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, False)
@@ -206,13 +210,27 @@ class MainProgram:
             elif command[len(CMD_FACE_DETECTOR):] == "DISABLE":
                 self._camera_monitor.setDetectorEnable(ID_FACE, False)
 
-        elif command == "DB_GET_ALL":
-            # 送出所有物品之資料
-            all_data: json = object_db.getAllData()
-            jsonString = formatDataToJsonString(0, "json_object", "all_objects", all_data)
-            print("Send:", jsonString)
-            commDevice.write(jsonString.encode(encoding='utf-8'))
-
+        elif command.startswith("DB_GET_ALL"):
+            l2 = command[11:]
+            if l2 == "LIST":
+                # 送出所有物品之資料
+                print("list all")
+                object_list = []
+                all_data: json = object_db.getAllData()
+                for object in all_data:
+                    object_list.append(
+                        {"story":object['story'], "story_name":(object['m_data']['story_name']), "total":(object['m_data']['total'])})
+                    
+                jsonString = formatDataToJsonString(0, "json_object", "all_objects_info", object_list)
+                print("Send:", jsonString)
+                commDevice.write(jsonString.encode(encoding='utf-8'))
+            elif l2.startswith("object"):
+                object_id = l2[7:]
+                print("get object",object_id)
+                objects_content = object_db.queryForstory(object_id)
+                jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
+                print("Send:", jsonString)
+                commDevice.write(jsonString.encode(encoding='utf-8'))
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
             if l1 == "LIST":
