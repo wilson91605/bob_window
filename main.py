@@ -234,7 +234,7 @@ class MainProgram:
                 jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
-                self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, folder_name = "a"), False)
+                self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, folder_name = object_id), False)
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
             if l1 == "LIST":
