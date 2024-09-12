@@ -170,7 +170,7 @@ class MainProgram:
     def main(self):
         device = self.initialize_device()
         self._camera_monitor.registerDetector(FaceDetector(ID_FACE), False)
-        self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT), False)#self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
+        #self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT), False)#self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
         self._camera_monitor.start()
 
         while True:
@@ -224,13 +224,17 @@ class MainProgram:
                 jsonString = formatDataToJsonString(0, "json_object", "all_objects_info", object_list)
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
+                #self._camera_monitor.stop(ID_OBJECT)
             elif l2.startswith("object"):
                 object_id = l2[7:]
-                print("get object",object_id)
+                print("get object:",object_id)
+                #self._camera_monitor.stop(ID_OBJECT)
+                
                 objects_content = object_db.queryForstory(object_id)
                 jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
+                self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, folder_name = "a"), False)
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
             if l1 == "LIST":

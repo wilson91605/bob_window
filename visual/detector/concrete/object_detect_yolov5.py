@@ -9,10 +9,11 @@ from visual.detector.framework.detector import Detector, DetectorData
 
 class ObjectDetector(Detector):
 
-    def __init__(self, _id):
+    def __init__(self, _id,folder_name='a', model_name='yolov5s.pt'):
         super().__init__(_id)
         # model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True, _verbose=False)
-        model = torch.hub.load('./yolov5/', 'custom', './yolov5s.pt', source='local')  # local repo
+        model_path = f'./weight/{folder_name}/{model_name}'
+        model = torch.hub.load('./yolov5/', 'custom', model_path, source='local')  # local repo
 
         model.conf = 0.9 # NMS confidence threshold #0.25
         model.iou = 0.45  # NMS IoU threshold
