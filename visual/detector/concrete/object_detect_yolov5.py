@@ -13,9 +13,9 @@ class ObjectDetector(Detector):
         super().__init__(_id)
         # model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True, _verbose=False)
         model_path = f'./weight/{folder_name}/{model_name}'
-        model = torch.hub.load('./yolov5/', 'custom', model_path, source='local')  # local repo
+        model = torch.hub.load('./yolov5/', 'custom', model_path, source='local', force_reload=True)  # local repo
 
-        model.conf = 0.9 # NMS confidence threshold #0.25
+        model.conf = 0.8 # NMS confidence threshold #0.25
         model.iou = 0.45  # NMS IoU threshold
         self._module = model
 

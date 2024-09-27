@@ -146,7 +146,7 @@ class MainProgram:
     def __init__(self):
         self.__id_counter = 0
         self._camera_monitor = CameraMonitor(0)
-
+        self._detector = None
         if not NO_ROBOT:
             # 初始化機器人
             robot = self.getDynamixel()
@@ -170,7 +170,6 @@ class MainProgram:
     def main(self):
         device = self.initialize_device()
         self._camera_monitor.registerDetector(FaceDetector(ID_FACE), False)
-        #self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT), False)#self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
         self._camera_monitor.start()
 
         while True:
@@ -194,14 +193,15 @@ class MainProgram:
         當接收到互動介面所傳輸之指令時會被呼叫
         @param command:接收到之指令
         """
-
+        # detector = None
         print("receive:", command)
 
         if command.startswith(CMD_OBJECT_DETECTOR):
             if command[len(CMD_OBJECT_DETECTOR):] == "ENABLE":
-                print("ENABLE")
+                print("Camera_ENABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, True)
             elif command[len(CMD_OBJECT_DETECTOR):] == "DISABLE":
+                print("Camera_ENABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, False)
 
         elif command.startswith(CMD_FACE_DETECTOR):
@@ -211,6 +211,7 @@ class MainProgram:
                 self._camera_monitor.setDetectorEnable(ID_FACE, False)
 
         elif command.startswith("DB_GET_ALL"):
+            # 抓取"DB_GET_ALL"之後的內容
             l2 = command[11:]
             if l2 == "LIST":
                 # 送出所有物品之資料
@@ -224,17 +225,16 @@ class MainProgram:
                 jsonString = formatDataToJsonString(0, "json_object", "all_objects_info", object_list)
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
-                #self._camera_monitor.stop(ID_OBJECT)
             elif l2.startswith("object"):
+                # 送出指定故事之所有內容
                 object_id = l2[7:]
                 print("get object:",object_id)
-                #self._camera_monitor.stop(ID_OBJECT)
-                
                 objects_content = object_db.queryForstory(object_id)
                 jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
-                self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, folder_name = object_id), False)
+                self._detector = ObjectDetector(ID_OBJECT, folder_name = object_id)
+                self._camera_monitor.registerDetector(self._detector, True)
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
             if l1 == "LIST":
