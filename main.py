@@ -201,7 +201,7 @@ class MainProgram:
                 print("Camera_ENABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, True)
             elif command[len(CMD_OBJECT_DETECTOR):] == "DISABLE":
-                print("Camera_ENABLE")
+                print("Camera_DISABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, False)
 
         elif command.startswith(CMD_FACE_DETECTOR):
