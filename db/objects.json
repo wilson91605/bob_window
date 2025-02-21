@@ -1,401 +1,599 @@
 [
-  {
-    "story":"The story of the Qu yuan",
-    "m_data":{
-      "story_name":"The story of the Qu yuan",
-      "total":4,
-      "pages":[
-        {
-          "id": "poet",
-          "data": {
-            "name": "poet",
-            "image": "vocabulary_img_poet",
-            "group": "n",
-            "sentence": "There was a poet and statesman named Qu Yuan who served the Kingdom of Chu.",
-            "definition": "There was a _____ and statesman named Qu Yuan who served the Kingdom of Chu.",
-            "face": "face_gif_happy",
-            "action": "tie.csv", 
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "詩人",
-                "tr_sentence": "有一位為楚國效力的「詩人」和政治家，名叫屈原。"
-              }
+    {
+        "story": "The story of the Qu yuan",
+        "m_data": {
+            "story_name": "The story of the Qu yuan",
+            "total": 4,
+            "pages": [
+                {
+                    "id": "poet",
+                    "data": {
+                        "name": "poet",
+                        "image": "vocabulary_img_poet",
+                        "group": "n",
+                        "sentence": "There was a poet and statesman named Qu Yuan who served the Kingdom of Chu.",
+                        "definition": "There was a _____ and statesman named Qu Yuan who served the Kingdom of Chu.",
+                        "face": "face_gif_happy",
+                        "action": "tie.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "詩人",
+                                "tr_sentence": "有一位為楚國效力的「詩人」和政治家，名叫屈原。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "boats",
+                    "data": {
+                        "name": "boats",
+                        "image": "vocabulary_img_boats",
+                        "group": "n",
+                        "sentence": "Upon hearing the news, the local people paddled their boats out to search for him but could not find Qu Yuan.",
+                        "definition": "Upon hearing the news, the local people paddled their _____ out to search for him but could not find Qu Yuan.",
+                        "face": "face_gif_happy",
+                        "action": "sink.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "船",
+                                "tr_sentence": "當地百姓聞訊，紛紛劃「船」出海尋找屈原，但始終沒有找到屈原。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "artemisia leaves",
+                    "data": {
+                        "name": "artemisia leaves",
+                        "image": "vocabulary_img_artemisialeaves",
+                        "group": "n",
+                        "sentence": "To prevent fish and shrimp from harming his body, they threw glutinous rice and artemisia leaves into the water.",
+                        "definition": "To prevent fish and shrimp from harming his body, they threw glutinous rice and _____ into the water.",
+                        "face": "face_gif_happy",
+                        "action": "refrigerator.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "艾葉",
+                                "tr_sentence": "為了防止魚蝦傷害他的身體，他們把糯米和「艾葉」丟進水裡。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "zongzi",
+                    "data": {
+                        "name": "zongzi",
+                        "image": "vocabulary_img_zongzi",
+                        "group": "n",
+                        "sentence": "People race dragon boats and eat zongzi to commemorate Qu Yuan and express their love and loyalty to their country.",
+                        "definition": "People race dragon boats and eat _____ to commemorate Qu Yuan and express their love and loyalty to their country. ",
+                        "face": "face_gif_happy",
+                        "action": "bus.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "粽子",
+                                "tr_sentence": "人們賽龍舟、吃“粽子”，以紀念屈原，表達對祖國的熱愛和忠誠。"
+                            }
+                        ]
+                    }
+                }
             ]
-          }
-        },
-        {
-          "id": "boats",
-          "data": {
-            "name": "boats",
-            "image": "vocabulary_img_boats",
-            "group": "n",
-            "sentence": "Upon hearing the news, the local people paddled their boats out to search for him but could not find Qu Yuan.",
-            "definition": "Upon hearing the news, the local people paddled their _____ out to search for him but could not find Qu Yuan.",
-            "face": "face_gif_happy",
-            "action": "sink.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "船",
-                "tr_sentence": "當地百姓聞訊，紛紛劃「船」出海尋找屈原，但始終沒有找到屈原。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "artemisia leaves",
-          "data": {
-            "name": "artemisia leaves",
-            "image": "vocabulary_img_artemisialeaves",
-            "group": "n",
-            "sentence": "To prevent fish and shrimp from harming his body, they threw glutinous rice and artemisia leaves into the water.",
-            "definition": "To prevent fish and shrimp from harming his body, they threw glutinous rice and _____ into the water.",
-            "face": "face_gif_happy",
-            "action": "refrigerator.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "艾葉",
-                "tr_sentence": "為了防止魚蝦傷害他的身體，他們把糯米和「艾葉」丟進水裡。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "zongzi",
-          "data": {
-            "name": "zongzi",
-            "image": "vocabulary_img_zongzi",
-            "group": "n",
-            "sentence": "People race dragon boats and eat zongzi to commemorate Qu Yuan and express their love and loyalty to their country.",
-            "definition": "People race dragon boats and eat _____ to commemorate Qu Yuan and express their love and loyalty to their country. ",
-            "face": "face_gif_happy",
-            "action": "bus.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "粽子",
-                "tr_sentence": "人們賽龍舟、吃“粽子”，以紀念屈原，表達對祖國的熱愛和忠誠。"
-              }
-            ]
-          }
         }
-      ]
-    }
-  },
-  {
-    "story":"the story of moon festival",
-    "m_data":{
-      "story_name":"the story of moon festival",
-      "total":16,
-      "pages":[
-        {
-          "id": "sun",
-          "data": {
-            "name": "sun",
-            "image": "vocabulary_img_sun",
-            "group": "n",
-            "sentence": "Hou Yi shot down nine of the suns,  leaving only one sun in the sky.",
-            "definition": "Hou Yi shot down nine of the _____s,  leaving only one _____ in the sky.",
-            "face": "face_gif_happy",
-            "action": "bicycle.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "太陽",
-                "tr_sentence": "后羿射下了九個太陽，只留一顆太陽在天空中。"
-              }
+    },
+    {
+        "story": "the story of moon festival",
+        "m_data": {
+            "story_name": "the story of moon festival",
+            "total": 16,
+            "pages": [
+                {
+                    "id": "sun",
+                    "data": {
+                        "name": "sun",
+                        "image": "vocabulary_img_sun",
+                        "group": "n",
+                        "sentence": "Hou Yi shot down nine of the suns,  leaving only one sun in the sky.",
+                        "definition": "Hou Yi shot down nine of the _____s,  leaving only one _____ in the sky.",
+                        "face": "face_gif_happy",
+                        "action": "bicycle.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "太陽",
+                                "tr_sentence": "后羿射下了九個太陽，只留一顆太陽在天空中。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "moon",
+                    "data": {
+                        "name": "moon",
+                        "image": "vocabulary_img_sky",
+                        "group": "n",
+                        "sentence": "Chang E eats the whole pill, and she flies to the moon.",
+                        "definition": "Chang E eats the whole pill, and she flies to the _____.",
+                        "face": "face_gif_happy",
+                        "action": "motorcycle.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "月亮",
+                                "tr_sentence": "嫦娥吃了整顆仙丹，飛到月亮。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "archer",
+                    "data": {
+                        "name": "archer",
+                        "image": "vocabulary_img_archer",
+                        "group": "n",
+                        "sentence": "Hou Yi is a archer",
+                        "definition": "Hou Yi is a _____.",
+                        "face": "face_gif_happy",
+                        "action": "powerful.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "射手",
+                                "tr_sentence": "后羿是位射手。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "legend",
+                    "data": {
+                        "name": "legend",
+                        "image": "vocabulary_img_legend",
+                        "group": "n",
+                        "sentence": "This is the legend of the Moon Festival.",
+                        "definition": "This is the _____ of the Moon Festival. ",
+                        "face": "face_gif_happy",
+                        "action": "bus.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "傳說",
+                                "tr_sentence": "這是中秋節的傳說。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "sky",
+                    "data": {
+                        "name": "sky",
+                        "image": "vocabulary_img_sky",
+                        "group": "n",
+                        "sentence": "There are ten suns in the sky.",
+                        "definition": "There are ten suns in the _____.",
+                        "face": "face_gif_happy",
+                        "action": "train.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "天空",
+                                "tr_sentence": "天空中有十顆太陽。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "festival",
+                    "data": {
+                        "name": "festival",
+                        "image": "vocabulary_img_festival",
+                        "group": "n",
+                        "sentence": "The Moon  is on the fifteenth day of August in the lunar calendar.",
+                        "definition": "The Moon _____ is on the fifteenth day of August in the lunar calendar.",
+                        "face": "face_gif_happy",
+                        "action": "truck.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "節",
+                                "tr_sentence": "中秋節在農曆八月十五日。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "mooncake",
+                    "data": {
+                        "name": "mooncake",
+                        "image": "vocabulary_img_mooncake",
+                        "group": "n",
+                        "sentence": "People eat mooncakes during the Moon Festival.",
+                        "definition": "People eat _____s during the Moon Festival.",
+                        "face": "face_gif_happy",
+                        "action": "boat.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "月餅",
+                                "tr_sentence": "人們在中秋節吃月餅。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "pill",
+                    "data": {
+                        "name": "pill",
+                        "image": "vocabulary_img_pill",
+                        "group": "n",
+                        "sentence": "Chang E eats a  the whole pill.",
+                        "definition": "Chang E eats a  the whole _____.",
+                        "face": "face_gif_happy",
+                        "action": "trafficlight.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "仙丹",
+                                "tr_sentence": "嫦娥吃了整顆仙丹。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "hot",
+                    "data": {
+                        "name": "hot",
+                        "image": "vocabulary_img_hot",
+                        "group": "adj",
+                        "sentence": "There are 10 suns in the sky, so it is very hot.",
+                        "definition": "There are 10 suns in the sky, so it is very _____.",
+                        "face": "face_gif_happy",
+                        "action": "sad.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "熱",
+                                "tr_sentence": "天空中有十顆太陽，所以天氣非常地熱。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "happy",
+                    "data": {
+                        "name": "happy",
+                        "image": "vocabulary_img_happy",
+                        "group": "adj",
+                        "sentence": "The Queen Mother of the West is very happy because Hou Yi saves people.",
+                        "definition": "The Queen Mother of the West is very _____ because Hou Yi saves people.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "快樂",
+                                "tr_sentence": "西王母娘娘很快樂因為后羿救了人們。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "sad",
+                    "data": {
+                        "name": "sad",
+                        "image": "vocabulary_img_sad",
+                        "group": "adj",
+                        "sentence": "Hou Yi is very sad because Chang E flies to the moon.",
+                        "definition": "Hou Yi is very _____ because Chang E flies to the moon.",
+                        "face": "face_gif_happy",
+                        "action": "sad.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "難過",
+                                "tr_sentence": "后羿很難過因為嫦娥飛到月亮上。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "strong",
+                    "data": {
+                        "name": "strong",
+                        "image": "vocabulary_img_strong",
+                        "group": "daj",
+                        "sentence": "There is a strong archer, and his name is Hou Yi.",
+                        "definition": "There is a _____ archer, and his name is Hou Yi.",
+                        "face": "face_gif_happy",
+                        "action": "powerful.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "強壯",
+                                "tr_sentence": "有一位強壯的射手，他的名字叫后羿。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "lonely",
+                    "data": {
+                        "name": "lonely",
+                        "image": "vocabulary_img_lonely",
+                        "group": "adj",
+                        "sentence": "On the moon, Chang E is very lonely.",
+                        "definition": "On the moon, Chang E is very _____. ",
+                        "face": "face_gif_happy",
+                        "action": "sad.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "孤單",
+                                "tr_sentence": "在月亮上，嫦娥非常孤單。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "rob",
+                    "data": {
+                        "name": "rob",
+                        "image": "vocabulary_img_rob",
+                        "group": "v",
+                        "sentence": "When Hou Yi is not at home, a robber come in and try to rob the pill. ",
+                        "definition": "When Hou Yi is not at home, a _____ber come in and try to _____ the pill.",
+                        "face": "face_gif_happy",
+                        "action": "snowboard.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "搶",
+                                "tr_sentence": "后羿不在家時，有個搶匪闖進家裡想搶仙丹。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eat",
+                    "data": {
+                        "name": "eat",
+                        "image": "vocabulary_img_eat",
+                        "group": "v",
+                        "sentence": "Chang E eats the whole pill.",
+                        "definition": "Chang E _____s the whole pill.",
+                        "face": "face_gif_happy",
+                        "action": "cow.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "吃",
+                                "tr_sentence": "嫦娥吃了整顆仙丹。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "fly",
+                    "data": {
+                        "name": "fly",
+                        "image": "vocabulary_img_fly",
+                        "group": "v",
+                        "sentence": "Chang E  flies to the moon.",
+                        "definition": "Chang E  _____ies to the moon.",
+                        "face": "face_gif_happy",
+                        "action": "umbrella.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "飛",
+                                "tr_sentence": "嫦娥飛到月亮。"
+                            }
+                        ]
+                    }
+                }
             ]
-          }
-        },
-        {
-          "id": "moon",
-          "data": {
-            "name": "moon",
-            "image": "vocabulary_img_sky",
-            "group": "n",
-            "sentence": "Chang E eats the whole pill, and she flies to the moon.",
-            "definition": "Chang E eats the whole pill, and she flies to the _____.",
-            "face": "face_gif_happy",
-            "action": "motorcycle.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "月亮",
-                "tr_sentence": "嫦娥吃了整顆仙丹，飛到月亮。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "archer",
-          "data": {
-            "name": "archer",
-            "image": "vocabulary_img_archer",
-            "group": "n",
-            "sentence": "Hou Yi is a archer",
-            "definition": "Hou Yi is a _____.",
-            "face": "face_gif_happy",
-            "action": "powerful.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "射手",
-                "tr_sentence": "后羿是位射手。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "legend",
-          "data": {
-            "name": "legend",
-            "image": "vocabulary_img_legend",
-            "group": "n",
-            "sentence": "This is the legend of the Moon Festival.",
-            "definition": "This is the _____ of the Moon Festival. ",
-            "face": "face_gif_happy",
-            "action": "bus.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "傳說",
-                "tr_sentence": "這是中秋節的傳說。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "sky",
-          "data": {
-            "name": "sky",
-            "image": "vocabulary_img_sky",
-            "group": "n",
-            "sentence": "There are ten suns in the sky.",
-            "definition": "There are ten suns in the _____.",
-            "face": "face_gif_happy",
-            "action": "train.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "天空",
-                "tr_sentence": "天空中有十顆太陽。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "festival",
-          "data": {
-            "name": "festival",
-            "image": "vocabulary_img_festival",
-            "group": "n",
-            "sentence": "The Moon  is on the fifteenth day of August in the lunar calendar.",
-            "definition": "The Moon _____ is on the fifteenth day of August in the lunar calendar.",
-            "face": "face_gif_happy",
-            "action": "truck.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "節",
-                "tr_sentence": "中秋節在農曆八月十五日。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "mooncake",
-          "data": {
-            "name": "mooncake",
-            "image": "vocabulary_img_mooncake",
-            "group": "n",
-            "sentence": "People eat mooncakes during the Moon Festival.",
-            "definition": "People eat _____s during the Moon Festival.",
-            "face": "face_gif_happy",
-            "action": "boat.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "月餅",
-                "tr_sentence": "人們在中秋節吃月餅。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "pill",
-          "data": {
-            "name": "pill",
-            "image": "vocabulary_img_pill",
-            "group": "n",
-            "sentence": "Chang E eats a  the whole pill.",
-            "definition": "Chang E eats a  the whole _____.",
-            "face": "face_gif_happy",
-            "action": "trafficlight.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "仙丹",
-                "tr_sentence": "嫦娥吃了整顆仙丹。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "hot",
-          "data": {
-            "name": "hot",
-            "image": "vocabulary_img_hot",
-            "group": "adj",
-            "sentence": "There are 10 suns in the sky, so it is very hot.",
-            "definition": "There are 10 suns in the sky, so it is very _____.",
-            "face": "face_gif_happy",
-            "action": "sad.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "熱",
-                "tr_sentence": "天空中有十顆太陽，所以天氣非常地熱。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "happy",
-          "data": {
-            "name": "happy",
-            "image": "vocabulary_img_happy",
-            "group": "adj",
-            "sentence": "The Queen Mother of the West is very happy because Hou Yi saves people.",
-            "definition": "The Queen Mother of the West is very _____ because Hou Yi saves people.",
-            "face": "face_gif_happy",
-            "action": "happy.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "快樂",
-                "tr_sentence": "西王母娘娘很快樂因為后羿救了人們。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "sad",
-          "data": {
-            "name": "sad",
-            "image": "vocabulary_img_sad",
-            "group": "adj",
-            "sentence": "Hou Yi is very sad because Chang E flies to the moon.",
-            "definition": "Hou Yi is very _____ because Chang E flies to the moon.",
-            "face": "face_gif_happy",
-            "action": "sad.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "難過",
-                "tr_sentence": "后羿很難過因為嫦娥飛到月亮上。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "strong",
-          "data": {
-            "name": "strong",
-            "image": "vocabulary_img_strong",
-            "group": "daj",
-            "sentence": "There is a strong archer, and his name is Hou Yi.",
-            "definition": "There is a _____ archer, and his name is Hou Yi.",
-            "face": "face_gif_happy",
-            "action": "powerful.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "強壯",
-                "tr_sentence": "有一位強壯的射手，他的名字叫后羿。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "lonely",
-          "data": {
-            "name": "lonely",
-            "image": "vocabulary_img_lonely",
-            "group": "adj",
-            "sentence": "On the moon, Chang E is very lonely.",
-            "definition": "On the moon, Chang E is very _____. ",
-            "face": "face_gif_happy",
-            "action": "sad.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "孤單",
-                "tr_sentence": "在月亮上，嫦娥非常孤單。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "rob",
-          "data": {
-            "name": "rob",
-            "image": "vocabulary_img_rob",
-            "group": "v",
-            "sentence": "When Hou Yi is not at home, a robber come in and try to rob the pill. ",
-            "definition": "When Hou Yi is not at home, a _____ber come in and try to _____ the pill.",
-            "face": "face_gif_happy",
-            "action": "snowboard.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "搶",
-                "tr_sentence": "后羿不在家時，有個搶匪闖進家裡想搶仙丹。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "eat",
-          "data": {
-            "name": "eat",
-            "image": "vocabulary_img_eat",
-            "group": "v",
-            "sentence": "Chang E eats the whole pill.",
-            "definition": "Chang E _____s the whole pill.",
-            "face": "face_gif_happy",
-            "action": "cow.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "吃",
-                "tr_sentence": "嫦娥吃了整顆仙丹。"
-              }
-            ]
-          }
-        },
-        {
-          "id": "fly",
-          "data": {
-            "name": "fly",
-            "image": "vocabulary_img_fly",
-            "group": "v",
-            "sentence": "Chang E  flies to the moon.",
-            "definition": "Chang E  _____ies to the moon.",
-            "face": "face_gif_happy",
-            "action": "umbrella.csv",
-            "languages": [
-              {
-                "code": "zh_TW",
-                "tr_name": "飛",
-                "tr_sentence": "嫦娥飛到月亮。"
-              }
-            ]
-          }
         }
-      ]
+    },
+    {
+        "story": "The story of the Santa Claus",
+        "m_data": {
+            "story_name": "The story of the Santa Claus",
+            "total": 10,
+            "pages": [
+                {
+                    "id": "gift",
+                    "data": {
+                        "name": "gift",
+                        "image": "vocabulary_img_gift",
+                        "group": "n",
+                        "sentence": "Santa brings gifts to children on Christmas Eve.",
+                        "definition": "Santa brings _____s to children on Christmas Eve.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "禮物",
+                                "tr_sentence": "聖誕老公公在聖誕夜送給孩子們禮物。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "elves",
+                    "data": {
+                        "name": "elves",
+                        "image": "vocabulary_img_elves",
+                        "group": "n",
+                        "sentence": "Santa’s elves make toys in the workshop.",
+                        "definition": "Santa’s _____ make toys in the workshop.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "精靈",
+                                "tr_sentence": "聖誕老公公的精靈在工作室製作玩具。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "reindeer",
+                    "data": {
+                        "name": "reindeer",
+                        "image": "vocabulary_img_reindeer",
+                        "group": "n",
+                        "sentence": "Reindeer pull Santa’s sleigh through the sky.",
+                        "definition": "_____ pull Santa’s sleigh through the sky.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "馴鹿",
+                                "tr_sentence": "馴鹿拉著聖誕老公公的雪橇在天空中飛翔。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "good",
+                    "data": {
+                        "name": "good",
+                        "image": "vocabulary_img_good",
+                        "group": "adj",
+                        "sentence": "Santa gives gifts to good children.",
+                        "definition": "Santa gives gifts to _____ children.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "好的",
+                                "tr_sentence": "聖誕老公公送好孩子禮物。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "christmas",
+                    "data": {
+                        "name": "christmas",
+                        "image": "vocabulary_img_christmas",
+                        "group": "n",
+                        "sentence": "Christmas is a time of joy and giving.",
+                        "definition": "_____ is a time of joy and giving.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "聖誕節",
+                                "tr_sentence": "聖誕節是歡樂和奉獻的節日。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "travel",
+                    "data": {
+                        "name": "travel",
+                        "image": "vocabulary_img_travels",
+                        "group": "v",
+                        "sentence": "Santa travels the world in one night.",
+                        "definition": "Santa _____s the world in one night.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "遊歷",
+                                "tr_sentence": "聖誕老人一夜之間走遍了世界各地。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "chimney",
+                    "data": {
+                        "name": "chimney",
+                        "image": "vocabulary_img_chimney",
+                        "group": "n",
+                        "sentence": "Santa comes down the chimney to leave gifts.",
+                        "definition": "Santa comes down the _____ to leave gifts.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "煙囪",
+                                "tr_sentence": "聖誕老人從煙囪下來留下禮物。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "cookies",
+                    "data": {
+                        "name": "cookies",
+                        "image": "vocabulary_img_cookies",
+                        "group": "n",
+                        "sentence": "Children leave cookies and milk for Santa.",
+                        "definition": "Children leave cookies and milk for Santa.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "餅乾",
+                                "tr_sentence": "孩子們留給聖誕老人餅乾和牛奶。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "beard",
+                    "data": {
+                        "name": "beard",
+                        "image": "vocabulary_img_beard",
+                        "group": "n",
+                        "sentence": "Santa has a big white beard.",
+                        "definition": "Santa has a big white _____.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "鬍鬚",
+                                "tr_sentence": "聖誕老公公有一把大大的白鬍子。"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "happiness",
+                    "data": {
+                        "name": "happiness",
+                        "image": "vocabulary_img_happiness",
+                        "group": "n",
+                        "sentence": "Christmas brings happiness to everyone.",
+                        "definition": "Christmas brings _____ to everyone.",
+                        "face": "face_gif_happy",
+                        "action": "happy.csv",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "幸福",
+                                "tr_sentence": "聖誕節帶給每個人幸福。"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     }
-  }
 ]
-  
