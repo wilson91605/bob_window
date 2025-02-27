@@ -65,7 +65,7 @@
                     "part_of_speech": "n",
                     "image": "vocabulary_img_chimney",
                     "audio": "vocabulary_audio_chimney",
-                    "action": "drum.csv"
+                    "action": "fly.csv"
                 },
                 {
                     "name": "Cookies",
@@ -93,6 +93,24 @@
                     "image": "vocabulary_img_happiness",
                     "audio": "vocabulary_audio_happiness",
                     "action": "happy.csv"
+                },
+                {
+                    "name": "Fly",
+                    "translated": "飛",
+                    "definition": "The bird can fly in the sky.",
+                    "part_of_speech": "adj",
+                    "image": "vocabulary_img_fly",
+                    "audio": "vocabulary_audio_3_fly",
+                    "action": "fly.csv"
+                },
+                {
+                    "name": "Angry",
+                    "translated": "生氣的",
+                    "definition": "She looks angry at her brother.",
+                    "part_of_speech": "adj",
+                    "image": "vocabulary_img_angry",
+                    "audio": "vocabulary_audio_angry",
+                    "action": "angry.csv"
                 }
             ]
         }

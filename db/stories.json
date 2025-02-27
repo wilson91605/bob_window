@@ -381,43 +381,43 @@
                     "text": "He also has reindeer that pull his sleigh through the sky.",
                     "audio": "story_audio_santa_claus_3",
                     "image": "face_gif_surprise",
-                    "action": "fly.csv"
+                    "action": "motorcycle.csv"
                 },
                 {
                     "text": "Every year, Santa checks his list to see which children have been good. ",
                     "audio": "story_audio_santa_claus_4",
                     "image": "face_gif_happy",
-                    "action": "hide.csv"
+                    "action": "checklist.csv"
                 },
                 {
                     "text": "If you’ve been good, he leaves presents under the Christmas tree. ",
                     "audio": "story_audio_santa_claus_5",
                     "image": "face_houyi",
-                    "action": "happy.csv"
+                    "action": "surfboard.csv"
                 },
                 {
                     "text": "Santa travels the world in one night, delivering gifts to homes. ",
                     "audio": "story_audio_santa_claus_6",
                     "image": "face_gif_surprise",
-                    "action": "fly.csv"
+                    "action": "wineglass.csv"
                 },
                 {
                     "text": "He enters through the chimney and fills stockings with small treats.\n",
                     "audio": "story_audio_santa_claus_7",
                     "image": "face_gif_love_eyes",
-                    "action": "attack.csv"
+                    "action": "fly.csv"
                 },
                 {
                     "text": "Children love to leave cookies and milk for Santa on Christmas Eve. ",
                     "audio": "story_audio_santa_claus_8",
                     "image": "face_gif_happy",
-                    "action": "sandwich.csv"
+                    "action": "eat.csv"
                 },
                 {
                     "text": "Santa always wears a red suit with white fur and has a big white beard. ",
                     "audio": "story_audio_santa_claus_9",
                     "image": "face_gif_surprise",
-                    "action": "hide.csv"
+                    "action": "touchbeard.csv"
                 },
                 {
                     "text": "He is known for saying, \"Ho, ho, ho!\" as he spreads joy and happiness.\n",

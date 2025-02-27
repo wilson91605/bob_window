@@ -499,9 +499,9 @@
                     }
                 },
                 {
-                    "id": "travel",
+                    "id": "travels",
                     "data": {
-                        "name": "travel",
+                        "name": "travels",
                         "image": "vocabulary_img_travels",
                         "group": "v",
                         "sentence": "Santa travels the world in one night.",
@@ -543,7 +543,7 @@
                         "image": "vocabulary_img_cookies",
                         "group": "n",
                         "sentence": "Children leave cookies and milk for Santa.",
-                        "definition": "Children leave cookies and milk for Santa.",
+                        "definition": "Children leave _____ and milk for Santa.",
                         "face": "face_gif_happy",
                         "action": "happy.csv",
                         "languages": [

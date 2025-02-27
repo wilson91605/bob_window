@@ -65,4 +65,4 @@ robot.open()
 for _id in robot.getAllServosId():
     print(_id, ":", robot.ping(_id))
 
-doAction(robot, "actions/touched.csv")
+doAction(robot, "actions/angry.csv")
