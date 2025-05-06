@@ -21,7 +21,7 @@ from visual.monitor.concrete.crt_camera import CameraMonitor
 from visual.monitor.framework.fw_monitor import CameraListener
 from visual.utils import visual_utils
 from communication.framework.fw_comm import CommDevice, ReConnectableDevice
-from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice
+from communication.concrete.crt_comm import EOLPackageHandler, SerialServerDevice, TCPServerDevice
 from serial_utils import getSerialNameByDescription
 
 db_charset = 'UTF-8'
@@ -29,12 +29,12 @@ CMD_OBJECT_DETECTOR = "OBJECT_DETECTOR "
 CMD_FACE_DETECTOR = "FACE_DETECTOR "
 
 # 藍芽HC-05模組 UART/USB轉接器晶片名稱(使用正規表達式)
-bt_description = ".*CP2102.*"
+bt_description = ".*CP210x.*"#".*CP210x.*"
 
 # 機器人 UART/USB轉接器晶片名稱(使用正規表達式)
-bot_description = ".*FT232R.*"
+bot_description = ".*USB Serial Port.*"#".*FT232R.*"
 
-NO_ROBOT = True
+NO_ROBOT = False
 
 ID_OBJECT = 1
 ID_FACE = 2
@@ -89,7 +89,7 @@ class MainCameraListener(CameraListener):
                 # 透過藍芽送出資料至互動介面
                 self.sendString(jsonString)
                 # 至少等待17秒才繼續進行影像辨識
-                self.face_timer = time.time() + 17
+                self.face_timer = time.time() + 10 # 17
 
         # id=2 當辨識到物品時
         elif detector_id == ID_OBJECT:
@@ -115,14 +115,17 @@ class MainCameraListener(CameraListener):
                 return
 
             selected_object = data[max_index].result
-            obj: Optional[json] = object_db.queryForId(selected_object['name'])
+            obj: Optional[json] = object_db.queryForstoryID(selected_object['name'])
             if obj is not None:
-                data: json = obj['data']
-                sendData = {"id": -1, "response_type": "json_object", "content": "single_object", "data": data}
-                jsonString = json.dumps(sendData, ensure_ascii=False)
-                print("Send:", jsonString)
-                # 透過藍芽送出資料至互動介面
-                self.sendString(jsonString)
+                for page in obj['m_data']['pages']:
+                    if page['id'] == selected_object['name']:  # 比較 id 和物體名稱
+                        data: json = page['data']
+                        sendData = {"id": -1, "response_type": "json_object", "content": "single_object", "data": data}
+                        jsonString = json.dumps(sendData, ensure_ascii=False)
+                        print("Send:", jsonString)
+                        # 透過藍芽送出資料至互動介面
+                        self.sendString(jsonString)
+                        break
                 # 至少等待17秒才繼續進行影像辨識
                 self.object_timer = time.time() + 17
 
@@ -143,7 +146,7 @@ class MainProgram:
     def __init__(self):
         self.__id_counter = 0
         self._camera_monitor = CameraMonitor(0)
-
+        self._detector = None
         if not NO_ROBOT:
             # 初始化機器人
             robot = self.getDynamixel()
@@ -156,7 +159,7 @@ class MainProgram:
 
     def initialize_device(self) -> ReConnectableDevice:
         # 使用TCP傳輸
-        # return TCPServerDevice("0.0.0.0", 4444, EOLPackageHandler())
+        #return TCPServerDevice("0.0.0.0", 4444, EOLPackageHandler())
 
         # 使用藍芽傳輸
         # return BluetoothServerDevice(EOLPackageHandler())
@@ -167,7 +170,6 @@ class MainProgram:
     def main(self):
         device = self.initialize_device()
         self._camera_monitor.registerDetector(FaceDetector(ID_FACE), False)
-        self._camera_monitor.registerDetector(ObjectDetector(ID_OBJECT, conf=0.4), False)
         self._camera_monitor.start()
 
         while True:
@@ -191,13 +193,15 @@ class MainProgram:
         當接收到互動介面所傳輸之指令時會被呼叫
         @param command:接收到之指令
         """
-
+        # detector = None
         print("receive:", command)
 
         if command.startswith(CMD_OBJECT_DETECTOR):
             if command[len(CMD_OBJECT_DETECTOR):] == "ENABLE":
+                print("Camera_ENABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, True)
             elif command[len(CMD_OBJECT_DETECTOR):] == "DISABLE":
+                print("Camera_DISABLE")
                 self._camera_monitor.setDetectorEnable(ID_OBJECT, False)
 
         elif command.startswith(CMD_FACE_DETECTOR):
@@ -206,13 +210,31 @@ class MainProgram:
             elif command[len(CMD_FACE_DETECTOR):] == "DISABLE":
                 self._camera_monitor.setDetectorEnable(ID_FACE, False)
 
-        elif command == "DB_GET_ALL":
-            # 送出所有物品之資料
-            all_data: json = object_db.getAllData()
-            jsonString = formatDataToJsonString(0, "json_object", "all_objects", all_data)
-            print("Send:", jsonString)
-            commDevice.write(jsonString.encode(encoding='utf-8'))
-
+        elif command.startswith("DB_GET_ALL"):
+            # 抓取"DB_GET_ALL"之後的內容
+            l2 = command[11:]
+            if l2 == "LIST":
+                # 送出所有物品之資料
+                print("list all")
+                object_list = []
+                all_data: json = object_db.getAllData()
+                for object in all_data:
+                    object_list.append(
+                        {"story":object['story'], "story_name":(object['m_data']['story_name']), "total":(object['m_data']['total'])})
+                    
+                jsonString = formatDataToJsonString(0, "json_object", "all_objects_info", object_list)
+                print("Send:", jsonString)
+                commDevice.write(jsonString.encode(encoding='utf-8'))
+            elif l2.startswith("object"):
+                # 送出指定故事之所有內容
+                object_id = l2[7:]
+                print("get object:",object_id)
+                objects_content = object_db.queryForstory(object_id)
+                jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
+                print("Send:", jsonString)
+                commDevice.write(jsonString.encode(encoding='utf-8'))
+                self._detector = ObjectDetector(ID_OBJECT, folder_name = object_id)
+                self._camera_monitor.registerDetector(self._detector, True)
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
             if l1 == "LIST":

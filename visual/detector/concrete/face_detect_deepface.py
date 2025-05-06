@@ -20,10 +20,10 @@ class FaceDetector(Detector):
         for (x, y, w, h) in faces:
             face_image = frame[int(y):int(y + h), int(x):int(x + w)]
             face = DeepFace.analyze(face_image, actions=('age', 'gender', 'race', 'emotion'), enforce_detection=False)
-            emotion = face[0]['dominant_emotion']
-            age = face[0]['age']
-            gender = face[0]['gender']
-            race = self.convert_float64_to_float_in_dict(face[0]['race'])
+            emotion = face['dominant_emotion']
+            age = face['age']
+            gender = face['gender']
+            race = self.convert_float64_to_float_in_dict(face['race'])
 
             content = {'emotion': emotion, 'age': age, 'gender': gender, 'race': race}
             # content = {'emotion': emotion}

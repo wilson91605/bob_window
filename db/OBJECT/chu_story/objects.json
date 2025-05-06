@@ -1,0 +1,79 @@
+[
+  {
+    "id": "poet",
+    "data": {
+      "name": "poet",
+      "image": "vocabulary_img_poet",
+      "group": "n",
+      "sentence": "There was a poet and statesman named Qu Yuan who served the Kingdom of Chu.",
+      "definition": "There was a _____ and statesman named Qu Yuan who served the Kingdom of Chu.",
+      "face": "face_gif_happy",
+      "action": "tie.csv", 
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "詩人",
+          "tr_sentence": "有一位為楚國效力的「詩人」和政治家，名叫屈原。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "boats",
+    "data": {
+      "name": "boats",
+      "image": "vocabulary_img_boats",
+      "group": "n",
+      "sentence": "Upon hearing the news, the local people paddled their boats out to search for him but could not find Qu Yuan.",
+      "definition": "Upon hearing the news, the local people paddled their _____ out to search for him but could not find Qu Yuan.",
+      "face": "face_gif_happy",
+      "action": "sink.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "船",
+          "tr_sentence": "當地百姓聞訊，紛紛劃「船」出海尋找屈原，但始終沒有找到屈原。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "artemisia leaves",
+    "data": {
+      "name": "artemisia leaves",
+      "image": "vocabulary_img_artemisialeaves",
+      "group": "n",
+      "sentence": "To prevent fish and shrimp from harming his body, they threw glutinous rice and artemisia leaves into the water.",
+      "definition": "To prevent fish and shrimp from harming his body, they threw glutinous rice and _____ into the water.",
+      "face": "face_gif_happy",
+      "action": "refrigerator.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "艾葉",
+          "tr_sentence": "為了防止魚蝦傷害他的身體，他們把糯米和「艾葉」丟進水裡。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zongzi",
+    "data": {
+      "name": "zongzi",
+      "image": "vocabulary_img_zongzi",
+      "group": "n",
+      "sentence": "People race dragon boats and eat zongzi to commemorate Qu Yuan and express their love and loyalty to their country.",
+      "definition": "People race dragon boats and eat _____ to commemorate Qu Yuan and express their love and loyalty to their country. ",
+      "face": "face_gif_happy",
+      "action": "bus.csv",
+      "languages": [
+        {
+          "code": "zh_TW",
+          "tr_name": "粽子",
+          "tr_sentence": "人們賽龍舟、吃“粽子”，以紀念屈原，表達對祖國的熱愛和忠誠。"
+        }
+      ]
+    }
+  }
+]
+  

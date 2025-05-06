@@ -1,6 +1,6 @@
 import re
 
-from serial.tools.list_ports_linux import comports
+from serial.tools.list_ports import comports
 
 def getSerialNameByDescription(description: str):
     for port in comports():

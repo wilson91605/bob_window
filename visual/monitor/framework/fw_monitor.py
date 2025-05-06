@@ -31,6 +31,7 @@ class VideoMonitor(threading.Thread):
 
     def registerDetector(self, detector: Detector, enable: bool):
         self.setDetectorEnable(detector.getId(), enable)
+        self.__detectors.clear() 
         self.__detectors.append(detector)
 
     def setDetectorEnable(self, detectorId, enable: bool):
@@ -38,7 +39,8 @@ class VideoMonitor(threading.Thread):
             self.__detector_enablers.append(detectorId)
         else:
             try:
-                self.__detector_enablers.remove(detectorId)
+                self.__detector_enablers.clear()
+                #self.__detector_enablers.remove(detectorId)
             except:
                 pass
 
