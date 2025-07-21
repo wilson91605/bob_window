@@ -20,6 +20,9 @@ class H42_20_S300_R(DynamixelServo):
 
     def getMovingAddressLength(self):
         return 610, 1
+    
+    def getGoalAcceleration(self):
+        return 556, 4
 
 
 class RX_64(DynamixelServo):
@@ -42,6 +45,8 @@ class RX_64(DynamixelServo):
     def getMovingAddressLength(self):
         return 46, 1
 
+    def getGoalAcceleration(self):
+        return 73, 1
 
 class MX_106(DynamixelServo):
 
@@ -62,6 +67,9 @@ class MX_106(DynamixelServo):
 
     def getMovingAddressLength(self):
         return 46, 1
+    
+    def getGoalAcceleration(self):
+        return 73, 1
 
 
 class MX_64(DynamixelServo):
@@ -83,6 +91,9 @@ class MX_64(DynamixelServo):
 
     def getMovingAddressLength(self):
         return 46, 1
+    
+    def getGoalAcceleration(self):
+        return 73, 1
 
 
 class RX_24F(DynamixelServo):
@@ -104,3 +115,6 @@ class RX_24F(DynamixelServo):
 
     def getMovingAddressLength(self):
         return 46, 1
+
+    def getGoalAcceleration(self):
+        return 73, 1

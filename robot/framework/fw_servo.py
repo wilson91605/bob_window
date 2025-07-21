@@ -32,3 +32,7 @@ class DynamixelServo(abc.ABC):
     @abc.abstractmethod
     def getMovingAddressLength(self):
         pass
+
+    @abc.abstractmethod
+    def getGoalAcceleration(self):
+        pass

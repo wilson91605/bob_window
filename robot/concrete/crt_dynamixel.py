@@ -95,6 +95,11 @@ class Dynamixel:
         address, length = servo.getGoalVelocityAddressLength()
         self._write(servo.getProtocol(), servo.getId(), address, velocity, length)
 
+    def setGoalAcceleration(self, servoId:int, acceleration:int):
+        servo = self.findServoById(servoId)
+        address, length = servo.getGoalAcceleration()
+        self._write(servo.getProtocol(), servo.getId(), address, acceleration, length)
+
     def stop(self, servoId: int):
         self.setGoalPosition(servoId, self.getPresentPosition(servoId))
 
@@ -123,10 +128,11 @@ class Dynamixel:
         elif servo.getProtocol() == PROTOCOL_2:
             model, dxl_comm_result, dxl_error = packetHandler2.ping(self._portHandler, servo.getId())
             if dxl_comm_result != COMM_SUCCESS:
-                # print("%s" % packetHandler2.getTxRxResult(dxl_comm_result))
+                #print("%s" % packetHandler2.getTxRxResult(dxl_comm_result))
                 return False
-            elif dxl_error != 0:
-                # print("%s" % packetHandler2.getRxPacketError(dxl_error))
+            elif dxl_error != 0 :
+                #print(dxl_error)
+                #print("%s" % packetHandler2.getRxPacketError(dxl_error))
                 return False
 
         return True
