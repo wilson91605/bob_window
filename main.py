@@ -276,6 +276,7 @@ class MainProgram:
             commDevice.write(jsonString.encode(encoding='utf-8'))
 
     def doRobotAction(self, csv_file):
+        acceleration = 20
         with open("actions/" + csv_file, newline='') as file:
             rows = csv.reader(file, delimiter=",")
             line = 0
@@ -292,13 +293,14 @@ class MainProgram:
                     delay = row[3]
 
                     if not delay == '':
-                        time.sleep(float(delay))
+                        time.sleep(float(0.5))
 
                     if servoId == '':
                         continue
 
                     if not speed == '':
-                        self.robot.setVelocity(int(servoId), int(speed))
+                        int(servoId) not in (8, 4, 9) and self.robot.setGoalAcceleration(int(servoId), int(acceleration))
+                        self.robot.setVelocity(int(servoId), int(speed)*6)
 
                     if not position == '':
                         self.robot.setGoalPosition(int(servoId), int(position))
