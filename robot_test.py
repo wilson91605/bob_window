@@ -56,8 +56,9 @@ def doAction(robot: Dynamixel, csv_file):
                     robot.setGoalPosition(int(servoId), int(position))
             line = line + 1
 
-bot_description = ".*COM13.*"
+bot_description = ".*COM4.*"
 #bot_description = ".*FT232R.*"
+#bot_description = ".*USB Serial Port.*"
 robot = Dynamixel(getSerialNameByDescription(bot_description), 115200)
 agent = CSVServoAgent("servos.csv")
 for servo in agent.getDefinedServos():
@@ -68,4 +69,4 @@ robot.open()
 for _id in robot.getAllServosId():
     print(_id, ":", robot.ping(_id))
 
-doAction(robot, "actions/angry.csv")
+doAction(robot, "actions/happy.csv")

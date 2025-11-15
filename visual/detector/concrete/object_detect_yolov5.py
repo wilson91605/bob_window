@@ -12,7 +12,7 @@ class ObjectDetector(Detector):
     def __init__(self, _id,folder_name='a', model_name='yolov5s.pt'):
         super().__init__(_id)
         # model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True, _verbose=False)
-        model_path = f'./weight/{folder_name}/{model_name}'
+        model_path = f'./Weight/{folder_name}/{model_name}'
         model = torch.hub.load('./yolov5/', 'custom', model_path, source='local', force_reload=True)  # local repo
 
         model.conf = 0.75 # NMS confidence threshold #0.25

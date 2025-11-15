@@ -8,12 +8,14 @@ import json
 import os
 import time
 from typing import Optional, List
+from pathlib import Path
 
 import cv2
 
 from dbctrl.concrete.crt_database import JSONDatabase
 from robot.concrete.crt_dynamixel import Dynamixel
 from robot.concrete.servo_utils import CSVServoAgent
+from robot.wheel_motion import WheelMotion
 from visual.detector.concrete.object_detect_yolov5 import ObjectDetector
 from visual.detector.concrete.face_detect_deepface import FaceDetector
 from visual.detector.framework.detector import DetectorData
@@ -32,7 +34,9 @@ CMD_FACE_DETECTOR = "FACE_DETECTOR "
 bt_description = ".*CP210x.*"#".*CP210x.*"
 
 # 機器人 UART/USB轉接器晶片名稱(使用正規表達式)
-bot_description = ".*USB Serial Port.*"#".*FT232R.*"
+#bot_description = ".*USB Serial Port.*"#".*FT232R.*"
+bot_description_arm =  ".*COM4.*"
+bot_description_wheel = ".*COM6.*"
 
 NO_ROBOT = False
 
@@ -147,15 +151,6 @@ class MainProgram:
         self.__id_counter = 0
         self._camera_monitor = CameraMonitor(0)
         self._detector = None
-        if not NO_ROBOT:
-            # 初始化機器人
-            robot = self.getDynamixel()
-            robot.open()
-
-            # 將機器人馬達扭力開啟
-            for _id in robot.getAllServosId():
-                robot.enableTorque(_id, True)
-            self.robot = robot
 
     def initialize_device(self) -> ReConnectableDevice:
         # 使用TCP傳輸
@@ -194,6 +189,7 @@ class MainProgram:
         @param command:接收到之指令
         """
         # detector = None
+        Doaction = []
         print("receive:", command)
 
         if command.startswith(CMD_OBJECT_DETECTOR):
@@ -233,7 +229,7 @@ class MainProgram:
                 jsonString = formatDataToJsonString(0, "json_object", "objects_content",objects_content['m_data']['pages'] )
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
-                self._detector = ObjectDetector(ID_OBJECT, folder_name = object_id)
+                self._detector = ObjectDetector(ID_OBJECT, folder_name = object_id, model_name='yolov5s.pt')
                 self._camera_monitor.registerDetector(self._detector, True)
         elif command.startswith("STORY_GET"):
             l1 = command[10:]
@@ -257,11 +253,25 @@ class MainProgram:
                 jsonString = formatDataToJsonString(0, "json_object", "story_content", story_content['data'])
                 print("Send:", jsonString)
                 commDevice.write(jsonString.encode(encoding='utf-8'))
+        elif command.startswith("GPT command"):
+            l1 = command[13:]
+            if any(ch.isupper() for ch in l1):
+                l1 = l1.lower()
+            if not l1.lower().endswith(".csv"):
+                l1 = l1 + ".csv"
+            print(l1)
+            base = Path(__file__).parent / "gpt_actions"
+            csv_path = base / l1
+            self.doAction(bot_description_arm, bot_description_wheel, str(csv_path))
+            Doaction.append(l1)
+
         elif command.startswith("DO_ACTION"):
             # 機器人做出動作 DO_ACTION [動作名稱].csv
             action = command[10:]
             # threading.Thread(target=doRobotAction, args=(action,)).start()
-            self.doRobotAction(action)
+            base = Path(__file__).parent / "actions"
+            csv_path = base / action
+            self.doAction(bot_description_arm, bot_description_wheel, str(csv_path))
 
         elif command == "STOP_ALL_ACTION":
             # 停止機器人所有動作
@@ -275,47 +285,99 @@ class MainProgram:
             print("Send:", jsonString)
             commDevice.write(jsonString.encode(encoding='utf-8'))
 
-    def doRobotAction(self, csv_file):
-        acceleration = 20
-        with open("actions/" + csv_file, newline='') as file:
-            rows = csv.reader(file, delimiter=",")
-            line = 0
-            for row in rows:
-                if line == 0:
-                    pass
-                else:
+    def doAction(self, bot_description_arm, bot_description_wheel, csv_file):
+        accel_default = 20
+
+        # --- 一次打開兩個 bus ---
+        robot_arm = Dynamixel(getSerialNameByDescription(bot_description_arm), 115200)
+        robot_wheel = Dynamixel(getSerialNameByDescription(bot_description_wheel), 115200)
+
+        def get_servo_id(servo):
+            for attr in ("id", "servoId", "ID", "getId"):
+                if hasattr(servo, attr):
+                    v = getattr(servo, attr)
+                    return v() if callable(v) else v
+            return None
+        
+        def to_int(x):
+            try:
+                return int(x)
+            except:
+                return None
+
+        def to_float(x):
+            try:
+                return float(x)
+            except:
+                return None
+        
+        agent = CSVServoAgent("servos.csv")
+
+
+        for servo in agent.getDefinedServos():
+            sid = get_servo_id(servo)
+            if sid is None:
+                continue
+            # 小於 11 當手臂，其餘當輪子
+            if sid < 11:
+                robot_arm.appendServo(servo)
+            else:
+                robot_wheel.appendServo(servo)
+
+        # 打開 port
+        robot_arm.open()
+        robot_wheel.open()
+
+        wm = WheelMotion(robot_wheel, motion_table_path="wheel.csv",
+                 wheel_ids=(11,12,13,14),
+                 dir_cal={11:+1,12:+1,13:+1,14:+1}) 
+
+        try:
+            wm.enable()
+            with open(csv_file, newline='', encoding="utf-8") as file:
+                rows = csv.reader(file, delimiter=",")
+                header = next(rows, None)
+
+                for row in rows:
                     if len(row) == 0:
                         continue
 
-                    servoId = row[0]
-                    position = row[1]
-                    speed = row[2]
-                    delay = row[3]
+                    servoId = to_int(row[0])
+                    position = to_int(row[1])    
+                    speed = to_int(row[2])          
+                    delay = to_float(row[3])
+                    wheelaction = row[4]        
 
-                    if not delay == '':
-                        time.sleep(float(0.5))
+                    if delay is not None:
+                        time.sleep(delay)
 
-                    if servoId == '':
+                    if servoId is None:
                         continue
 
-                    if not speed == '':
-                        int(servoId) not in (8, 4, 9) and self.robot.setGoalAcceleration(int(servoId), int(acceleration))
-                        self.robot.setVelocity(int(servoId), int(speed)*6)
+                    # 手臂（<11）
+                    if servoId < 11:
+                        if speed is not None:
+                            if servoId not in (8, 4, 9):
+                                robot_arm.setGoalAcceleration(servoId, accel_default)
+                            robot_arm.setVelocity(servoId, speed  * 10)
 
-                    if not position == '':
-                        self.robot.setGoalPosition(int(servoId), int(position))
-                line = line + 1
+                        if position is not None:
+                            robot_arm.setGoalPosition(servoId, position)
+                    # 輪子 (11)
+                    else:
+                        if speed is not None:
+                            wm.move(wheelaction, speed)
+            wm.disable()
 
-    def getDynamixel(self) -> Dynamixel:
-        """
-        取得實體機器人裝置
-        @return: 實體機器人
-        """
-        agent = CSVServoAgent("servos.csv")
-        dynamixel = Dynamixel(getSerialNameByDescription(bot_description), 115200)
-        for servo in agent.getDefinedServos():
-            dynamixel.appendServo(servo)
-        return dynamixel
+        finally:
+            try:
+                robot_arm.close()
+            except:
+                pass
+            try:
+                robot_wheel.close()
+            except:
+                pass
 
 
 if __name__ == '__main__':
