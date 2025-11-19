@@ -6,7 +6,7 @@
     robot = Dynamixel("COM6", 115200)
     robot.open()
 
-    wm = WheelMotion(robot, motion_table_path="gpt_actions/wheel_motion.csv",
+    wm = WheelMotion(robot, motion_table_path="wheel.csv",
                      wheel_ids=(11,12,13,14),
                      dir_cal={11:+1,12:+1,13:+1,14:+1})
     wm.move("右橫移", 160, duration=0.8)   # 跑 0.8 秒後自動煞停
