@@ -75,7 +75,10 @@ def doAction(bot_description_arm, bot_description_wheel, csv_file):
                 position = to_int(row[1])    
                 speed = to_int(row[2])          
                 delay = to_float(row[3])
-                wheelaction = row[4]     
+                try:
+                    wheelaction = row[4]
+                except:
+                    pass     
 
                 if delay is not None:
                     time.sleep(delay)
@@ -112,4 +115,4 @@ def doAction(bot_description_arm, bot_description_wheel, csv_file):
 bot_description_arm =  ".*COM4.*"
 bot_description_wheel = ".*COM6.*"
 
-doAction(bot_description_arm, bot_description_wheel, "gpt_actions/rotatea.csv")
+doAction(bot_description_arm, bot_description_wheel, "gpt_actions/rotate.csv")

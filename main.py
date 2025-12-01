@@ -346,7 +346,10 @@ class MainProgram:
                     position = to_int(row[1])    
                     speed = to_int(row[2])          
                     delay = to_float(row[3])
-                    wheelaction = row[4]        
+                    try:
+                        wheelaction = row[4]
+                    except:
+                        pass        
 
                     if delay is not None:
                         time.sleep(delay)
