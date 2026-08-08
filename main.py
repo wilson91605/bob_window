@@ -3,6 +3,15 @@
 Usage:
     $ python path/to/object_detect.py --source path/to/img.jpg --weights yolov5s.pt --img 640
 """
+import pathlib
+import platform
+
+# 檢查目前系統是否為 Linux
+plt = platform.system()
+if plt != 'Windows':
+    # 將 WindowsPath 強制指向 PosixPath
+    pathlib.WindowsPath = pathlib.PosixPath
+
 import csv
 import json
 import os
@@ -31,12 +40,16 @@ CMD_OBJECT_DETECTOR = "OBJECT_DETECTOR "
 CMD_FACE_DETECTOR = "FACE_DETECTOR "
 
 # 藍芽HC-05模組 UART/USB轉接器晶片名稱(使用正規表達式)
-bt_description = ".*CP210x.*"#".*CP210x.*"
+bt_description = ".*CP2102.*"#".*CP210x.*"
 
 # 機器人 UART/USB轉接器晶片名稱(使用正規表達式)
 #bot_description = ".*USB Serial Port.*"#".*FT232R.*"
-bot_description_arm =  ".*COM4.*"
-bot_description_wheel = ".*COM6.*"
+if platform.system() == "Windows" :
+    bot_description_arm =  ".*COM4.*"
+    bot_description_wheel = ".*COM6.*"
+else:
+    bot_description_arm =  "/dev/ttyRobotArm"
+    bot_description_wheel = "/dev/ttyRobotFeet"
 
 NO_ROBOT = False
 
@@ -55,14 +68,16 @@ class MainCameraListener(CameraListener):
         self.commDevice = commDevice
         self.object_timer = 0
         self.face_timer = 0
-
+ 
     # 當從攝影機擷取到照片時,此方法被觸發
     def onImageRead(self, image):
         # 顯示預覽視窗
-        cv2.imshow("show", image)
+        pass
+        #cv2.imshow("show", image)
 
     def onNothingDetected(self, _id, image):
-        cv2.imshow("show", image)
+        pass
+        #cv2.imshow("show", image)
 
     def onDetect(self, detector_id, image, data: List[DetectorData]):
         """
@@ -78,7 +93,7 @@ class MainCameraListener(CameraListener):
                 visual_utils.annotateLabel(image, result.x, result.y, result.width, result.height, label)
 
             # 顯示辨識結果視窗
-            cv2.imshow("show", image)
+            #cv2.imshow("show", image)
 
             if time.time() <= self.face_timer:
                 return
@@ -113,7 +128,7 @@ class MainCameraListener(CameraListener):
 
                 i = i + 1
             # 顯示辨識結果視窗
-            cv2.imshow("show", labeledImage)
+            #cv2.imshow("show", labeledImage)
 
             if time.time() <= self.object_timer:
                 return
@@ -289,8 +304,12 @@ class MainProgram:
         accel_default = 20
 
         # --- 一次打開兩個 bus ---
-        robot_arm = Dynamixel(getSerialNameByDescription(bot_description_arm), 115200)
-        robot_wheel = Dynamixel(getSerialNameByDescription(bot_description_wheel), 115200)
+        if platform.system() == "Windows" :
+            robot_arm = Dynamixel(getSerialNameByDescription(bot_description_arm), 115200)
+            robot_wheel = Dynamixel(getSerialNameByDescription(bot_description_wheel), 115200)
+        else:
+            robot_arm = Dynamixel(bot_description_arm, 115200)
+            robot_wheel = Dynamixel(bot_description_wheel, 115200)
 
         def get_servo_id(servo):
             for attr in ("id", "servoId", "ID", "getId"):

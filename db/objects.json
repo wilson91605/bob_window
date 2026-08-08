@@ -595,5 +595,166 @@
                 }
             ]
         }
+    },
+    {
+        "story": "local",
+        "m_data": {
+            "story_name": "local",
+            "total": 8,
+            "pages": [
+                {
+                    "id": "park",
+                    "data": {
+                        "name": "park",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "在公園玩耍",
+                        "definition": "在公園玩耍",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "公園",
+                                "tr_sentence": "公園"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "cinema",
+                    "data": {
+                        "name": "cinema",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "電影院",
+                        "definition": "電影院",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "電影院",
+                                "tr_sentence": "電影院"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "home",
+                    "data": {
+                        "name": "home",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "家",
+                        "definition": "家",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "家",
+                                "tr_sentence": "家"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "school",
+                    "data": {
+                        "name": "school",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "學校",
+                        "definition": "學校",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "學校",
+                                "tr_sentence": "學校"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "mail",
+                    "data": {
+                        "name": "mail",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "商場",
+                        "definition": "商場",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "商場",
+                                "tr_sentence": "商場"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "station",
+                    "data": {
+                        "name": "station",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "車站",
+                        "definition": "車站",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "車站",
+                                "tr_sentence": "車站"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "library",
+                    "data": {
+                        "name": "library",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "圖書館",
+                        "definition": "圖書館",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "圖書館",
+                                "tr_sentence": "圖書館"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "museum",
+                    "data": {
+                        "name": "museum",
+                        "image": "",
+                        "group": "n",
+                        "sentence": "博物館",
+                        "definition": "博物館",
+                        "face": "",
+                        "action": "",
+                        "languages": [
+                            {
+                                "code": "zh_TW",
+                                "tr_name": "博物館",
+                                "tr_sentence": "博物館"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     }
 ]

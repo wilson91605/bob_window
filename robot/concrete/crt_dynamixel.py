@@ -13,10 +13,11 @@ if os.name == 'nt':
         return msvcrt.getch().decode()
 else:
     import sys, tty, termios
-
-    fd = sys.stdin.fileno()
-    old_settings = termios.tcgetattr(fd)
-
+    try:
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+    except Exception as e:
+        print(f"無法設定終端機: {e}")
 
     def getch():
         try:

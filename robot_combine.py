@@ -1,6 +1,7 @@
 import csv
 import re
 import time
+import platform
 from serial.tools.list_ports import comports
 
 from robot.concrete.crt_dynamixel import Dynamixel
@@ -30,8 +31,12 @@ def doAction(bot_description_arm, bot_description_wheel, csv_file):
     accel_default = 20
 
     # --- 一次打開兩個 bus ---
-    robot_arm = Dynamixel(getSerialNameByDescription(bot_description_arm), 115200)
-    robot_wheel = Dynamixel(getSerialNameByDescription(bot_description_wheel), 115200)
+    if platform.system() == "Windows" :
+        robot_arm = Dynamixel(getSerialNameByDescription(bot_description_arm), 115200)
+        robot_wheel = Dynamixel(getSerialNameByDescription(bot_description_wheel), 115200)
+    else:
+        robot_arm = Dynamixel(bot_description_arm, 115200)
+        robot_wheel = Dynamixel(bot_description_wheel, 115200)
 
     def get_servo_id(servo):
         for attr in ("id", "servoId", "ID", "getId"):
@@ -112,7 +117,11 @@ def doAction(bot_description_arm, bot_description_wheel, csv_file):
             pass
 
 
-bot_description_arm =  ".*COM4.*"
-bot_description_wheel = ".*COM6.*"
+if platform.system() == "Windows" :
+    bot_description_arm =  ".*COM4.*"
+    bot_description_wheel = ".*COM6.*"
+else:
+    bot_description_arm =  "/dev/ttyRobotArm"
+    bot_description_wheel = "/dev/ttyRobotFeet"
 
 doAction(bot_description_arm, bot_description_wheel, "gpt_actions/rotate.csv")

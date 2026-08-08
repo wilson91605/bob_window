@@ -15,7 +15,7 @@ class ObjectDetector(Detector):
         model_path = f'./Weight/{folder_name}/{model_name}'
         model = torch.hub.load('./yolov5/', 'custom', model_path, source='local', force_reload=True)  # local repo
 
-        model.conf = 0.75 # NMS confidence threshold #0.25
+        model.conf = 0.70 # NMS confidence threshold #0.25
         model.iou = 0.45  # NMS IoU threshold
         self._module = model
 
